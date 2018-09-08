@@ -1,6 +1,7 @@
-# Paper Reading List
+## Paper Reading List
 
-## By Year
+### By Year
 
-
-## By Conference
++ 2018
++ 2017
++ 2016
