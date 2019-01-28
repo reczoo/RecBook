@@ -1,4 +1,4 @@
-## Awesome Papers
+## Awesome Search & Recommendation
 
 ### By Year
 
