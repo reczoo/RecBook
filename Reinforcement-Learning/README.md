@@ -1,5 +1,5 @@
-## 2018
-A curated list of awesome deep reinforcement learning research in recommendation, searching, and NLP
+# Reinforcement Learning
+A curated list of awesome deep reinforcement learning research in search and recommendation
 
-### Papers
-+ Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, Jiliang Tang. [Deep Reinforcement Learning for Page-wise Recommendations](https://arxiv.org/pdf/1805.02343.pdf), *RecSys*, 2018.
+## Papers
++ [**RecSys'18**] [Deep Reinforcement Learning for Page-wise Recommendations](https://arxiv.org/pdf/1805.02343.pdf), by Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, Jiliang Tang.
