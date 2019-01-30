@@ -6,15 +6,34 @@
 
 
 ### By Topic
-+ [CTR/CVR Prediction](./CTR-Prediction)
-+ [Recommender Systems](./Recommender-Systems)
-+ [Neural IR](./Neural-IR)
++ [CTR/CVR Prediction](./CTR-Prediction/README.md)
+    - [Categorical Representation Learning](./CTR-Prediction/README.md#Categorical-Representation-Learning) 
+    - [User Modeling](./CTR-Prediction/README.md#User-Behavior-Modeling)
+    - [Multitask Learning](./CTR-Prediction/README.md#Multitask-Learning)
+    - [Multimodal Representation Learning](./CTR-Prediction/README.md#Multimodal-Representation-Learning)
+
++ [Recommender Systems](./Recommender-Systems/README.md)
+    - [Collaborative Filtering](./Recommender-Systems/README.md#Collaborative-Filtering)
+    - [Sequential Recommendation](./Recommender-Systems/README.md#Sequential-Recommendation)
+
++ [Neural IR](./Neural-IR/README.md)
+    - [Sponsored Search](./Neural-IR/README.md#Sponsored-Search)
+    - [Unbiased L2R](./Neural-IR/README.md#Unbiased-L2R)
+    
 + [Reinforcement Learning](./Reinforcement-Learning)
-+ [Teacher-Student Network](./Teacher-Student-Network)
-+ [Graph Convolution Networks](./Graph-Convolution-Networks)
-+ [Text Classification](./Text-Classification)
-+ [Word Embedding](./Word-Embedding)
-+ [Network Architectures](./Network-Architectures)
+
++ [NLP](./NLP/README.md)
+    + [Text Classification](./NLP/README.md#Text-Classification)
+    + [Word Embedding](./NLP/README.md#Word-Embedding)
+    + [Keyword Generation](./NLP/README.md#Keyword-Generation)
+
++ [Network Architectures](./Network-Architectures/README.md)
+    + [Teacher-Student Network](./Network-Architectures/README.md#Teacher-Student-Network)
+    + [Graph Convolution Networks](./Network-Architectures/README.md#Graph-Convolution-Networks)
+
+
+
+
 
 
 

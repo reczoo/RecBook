@@ -16,6 +16,7 @@ A curated list of awesome resources on recommender systems
    > 本文基于Autoencoder的思想来解决CF问题。CF矩阵的每一行或者每一列都可以看作是一个样本（特征为rating值向量），Autoencoder的应用就是将样本的特征向量通过一个网络映射到latent space, 再通过另一个网络进行还原。改进点就是这里的网络映射考虑rating里的缺失值，BP传播只处理observed value。实验中，基于物品维度的映射(I-AutoRec)比基于用户维度的映射(U-AutoRec)效果更好。
 
 
-
+## Sequential Recommendation
+1. [**AAAI'14**] Yuyu Zhang, Hanjun Dai, Chang Xu, Jun Feng, Taifeng Wang, Jiang Bian, Bin Wang, Tie-Yan Liu. [Sequential Click Prediction for Sponsored Search with Recurrent Neural Networks](http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/download/8529/8581), *AAAI*, 2014.
 
 

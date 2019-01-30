@@ -1,16 +1,15 @@
 # Papers
 
-A list of papers on CTR/CVR prediction in online advertising, recommendation, and sponsored search.
+A list of papers on CTR/CVR prediction for online advertising, recommendation, and sponsored search.
+
 + [Categorical Representation Learning](#Categorical-Representation-Learning)
    + [2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [2015](#2015) | [2014](#2014) | [2013](#2013) | [2010](#2010) | [2007](#2007) 
-+ [User Behavior Modeling](#User-Behavior-Modeling)
-+ [Sponsored Search](#Sponsored-Search)
-+ [Sequential Recommendation](#Sequential-Recommendation)
++ [User Modeling](#User-Behavior-Modeling)
++ [Multitask Learning](#Multitask-Learning)
 + [Multimodal Representation Learning](#Multimodal-Representation-Learning)
-+ [Reinforcement/Online Learning](#Reinforcement/Online-Learning)
-+ [Others](#Others)
 
 ## Categorical Representation Learning
+
 ### 2019
 
 1. [**AAAI'19**] Accurate and Interpretable Factorization Machines
@@ -91,13 +90,8 @@ A list of papers on CTR/CVR prediction in online advertising, recommendation, an
 + [**WWW'07**] Matthew Richardson, Ewa Dominowska, Robert Ragno. [Predicting Clicks: Estimating the Click-Through Rate for New Ads](https://dl.acm.org/citation.cfm?id=1242643), *WWW*, 2007. [**Microsoft**]
    > 本文是比较早做广告CTR预估的文章，采用最经典的LR模型来预测新广告的CTR。本文的CTR是统计意义上的点击率，并与query无关。模型利用了bid term CTR, related term CTR, ad quality, order相关的特征做线性回归，以cross-entropy loss作为regression模型预测CTR的概率。 在数值特征上，采用了x, log(1 + x), x^2的组合，以及对query frequency划分bin方式。实验表明，广告在100次以上view的情况下CTR的预估能逼近真实值。本文支出query相关的CTR预估是重要的方向。
 
-## User Behavior Modeling
+## User Modeling
 
-## Sponsored Search
-1. [**CoRR**] Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic. [Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search](https://arxiv.org/abs/1803.10739), *arXiv:1803.10739*, 2018. [**Yahoo**, **Criteo**]
-
-## Sequential Recommendation
-1. [**AAAI'14**] Yuyu Zhang, Hanjun Dai, Chang Xu, Jun Feng, Taifeng Wang, Jiang Bian, Bin Wang, Tie-Yan Liu. [Sequential Click Prediction for Sponsored Search with Recurrent Neural Networks](http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/download/8529/8581), *AAAI*, 2014.
 
 ## Multitask Learning
 1. [**SIGIR'18**] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, Kun Gai. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931), *SIGIR*, 2018. [**Alibaba**]
