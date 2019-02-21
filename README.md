@@ -2,7 +2,7 @@
 
 ### By Year
 
-+ [2019](./2019.md) | [2018](./2018.md) | [2017](./2017.md) | [2016](./2016.md)
++ [2019](./2019.md) | [2018](./2018.md) | [2017](./2017.md) | [2016](./2016.md) | [2015](./2015.md)
 
 
 ### By Topic
@@ -22,6 +22,7 @@
     + [Text Classification](./NLP/README.md#Text-Classification)
     + [Word Embedding](./NLP/README.md#Word-Embedding)
     + [Keyword Generation](./NLP/README.md#Keyword-Generation)
++ [Knowledge Graph](./Knowledge-Graph/README.md)
 + [Network Architectures](./Network-Architectures/README.md)
     + [Teacher-Student Network](./Network-Architectures/README.md#Teacher-Student-Network)
     + [Graph Convolution Networks](./Network-Architectures/README.md#Graph-Convolution-Networks)
