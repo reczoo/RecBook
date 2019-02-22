@@ -19,6 +19,7 @@
     - [Unbiased L2R](./Neural-IR/README.md#Unbiased-L2R)
 + [Reinforcement Learning](./Reinforcement-Learning)
 + [NLP](./NLP/README.md)
+    + [Semantic Matching](https://github.com/anyai/DEEM/blob/master/docs/papers.md)
     + [Text Classification](./NLP/README.md#Text-Classification)
     + [Word Embedding](./NLP/README.md#Word-Embedding)
     + [Keyword Generation](./NLP/README.md#Keyword-Generation)
