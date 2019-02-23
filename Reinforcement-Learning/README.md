@@ -9,4 +9,5 @@ A curated list of awesome deep reinforcement learning research in search and rec
 + [**WSDM'19**] [Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/abs/1812.02353), by Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, Ed Chi. [**Google**]
 + [**KDD'18**] [Reinforcement Learning to Rank in E-Commerce Search Engine: Formalization, Analysis, and Application](https://arxiv.org/abs/1803.00710), by Yujing Hu, Qing Da, Anxiang Zeng, Yang Yu, Yinghui Xu. [**Alibaba**]
 + [**RecSys'18**] [Deep Reinforcement Learning for Page-wise Recommendations](https://arxiv.org/pdf/1805.02343.pdf), by Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, Jiliang Tang. [**JD**]
++ [**ICDM'18**] [A Reinforcement Learning Framework for Explainable Recommendation](https://www.microsoft.com/en-us/research/uploads/prod/2018/08/main.pdf), by Xiting Wang, Yiru Chen, Jie Yang, Le Wu, Zhengtao Wu, Xing Xie. [**Microsoft**]
 + [**SIGIR'17**] [Reinforcement Learning to Rank with Markov Decision Process](http://www.bigdatalab.ac.cn/~junxu/publications/SIGIR2017_RL_L2R.pdf), by Zeng Wei, Jun Xu, Yanyan Lan, Jiafeng Guo, Xueqi Cheng.
