@@ -17,6 +17,7 @@
 + [Neural IR](./Neural-IR/README.md)
     - [Sponsored Search](./Neural-IR/README.md#Sponsored-Search)
     - [Unbiased L2R](./Neural-IR/README.md#Unbiased-L2R)
+    - [Semantic Matching](./Neural-IR/README.md#Semantic-Matching)
 + [Reinforcement Learning](./Reinforcement-Learning)
 + [NLP](./NLP/README.md)
     + [Semantic Matching](https://github.com/anyai/DEEM/blob/master/docs/papers.md)
