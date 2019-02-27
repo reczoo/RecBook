@@ -17,6 +17,7 @@
     - [Interactive Recommendation](./Recommender-Systems/README.md#Interactive-Recommendation)
 + [Neural IR](./Neural-IR/README.md)
     - [Sponsored Search](./Neural-IR/README.md#Sponsored-Search)
+    - [Product Search](./Neural-IR/README.md#Product-Search)
     - [Unbiased L2R](./Neural-IR/README.md#Unbiased-L2R)
     - [Semantic Matching](./Neural-IR/README.md#Semantic-Matching)
     - [Query Suggestion](./Neural-IR/README.md#Query-Suggestion)
