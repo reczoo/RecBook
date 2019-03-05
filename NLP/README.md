@@ -8,3 +8,7 @@
 1. [**EMNLP'18**] [Keyphrase Generation with Correlation Constraints](https://arxiv.org/abs/1808.07185), by Jun Chen, Xiaoming Zhang, Yu Wu, Zhao Yan, Zhoujun Li.
 1. [**ACL'17**] [Deep Keyphrase Generation](https://arxiv.org/abs/1704.06879), by Rui Meng, Sanqiang Zhao, Shuguang Han, Daqing He, Peter Brusilovsky, Yu Chi.
 
+### Language Understanding
+1. [**NIPS'17**] [Attention Is All You Need](https://arxiv.org/abs/1706.03762), by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. [**Google**]
+    > 本文提出了NLP中的经典Transformer模型，完全基于self-attention的叠加来做sentence encoding和decoding。虽然attention weight的计算方法比较多，但这里的self-attention的计算同时使用了三个matrices，query matrix (Q), key matrix (K), value matrix (V). Q为中心位置使用，K为其他位置使用，V为其他位置使用，所有矩阵都是通过一层线性映射得到，维度也比word vector要低。同时在attention过softmax之前经过了scale的处理，值得借鉴。另外Transformer也引入了positional embedding和residual connection的使用。[[Read more](http://jalammar.github.io/illustrated-transformer/)][[Read more 2](https://zhuanlan.zhihu.com/p/48508221)]
+
