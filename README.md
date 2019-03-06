@@ -31,7 +31,7 @@
 + [Network Architectures](./Network-Architectures/README.md)
     + [Teacher-Student Network](./Network-Architectures/README.md#Teacher-Student-Network)
     + [Graph Convolution Networks](./Network-Architectures/README.md#Graph-Convolution-Networks)
-    + [Relational Reasoning](./Network-Architectures/README.md#Relational-Reasoning)
+    + [Relational Network](./Network-Architectures/README.md#Relational-Reasoning)
 
 
 
