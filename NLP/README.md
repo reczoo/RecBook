@@ -2,6 +2,10 @@
 1. [**ACL'18**] [Joint Embedding of Words and Labels for Text Classification](http://people.ee.duke.edu/~lcarin/acl2018_Guoyin.pdf), by Guoyin Wang, Chunyuan Li, Wenlin Wang, Yizhe Zhang, Dinghan Shen, Xinyuan Zhang, Ricardo Henao, Lawrence Carin. 
 1. [**ICLR'18**] [Multi-Task Label Embedding for Text Classification](https://arxiv.org/abs/1710.07210), by Honglun Zhang, Liqiang Xiao, Wenqing Chen, Yongkun Wang, Yaohui Jin. 
 
+### Word Embedding
+1. [**NeurIPS**] [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858), by Chengyue Gong, Di He, Xu Tan, Tao Qin, Liwei Wang, Tie-Yan Liu. [**Microsoft**]
+    > 一般来说，Word embedding在popular words上的效果好，在rare words上的效果比较差。本文提出了一种基于对抗学习的方法：一方面学习传统的language model或者word2vec，一方面学习一个discriminator来判别word是popular/rare。通过对抗学习让word embedding对词的频率做到无区别化，从而去除了frequency bias，更多的保留semantic信息，从另一个角度讲，通过co-training可以增强embedding的泛化能力。
+
 ### Keyphrase Generation
 1. [**AAAI'19**] [Title-Guided Encoding for Keyphrase Generation](https://arxiv.org/abs/1808.08575), by Wang Chen, Yifan Gao, Jiani Zhang, Irwin King, Michael R. Lyu.
 1. [**EMNLP'18**] [Semi-Supervised Learning for Neural Keyphrase Generation](https://arxiv.org/abs/1808.06773), by Hai Ye, Lu Wang.
