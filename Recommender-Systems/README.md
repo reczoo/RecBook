@@ -2,11 +2,11 @@
 A curated list of awesome papers on recommender systems
 
 + [Surveys and Tutorials](#Surveys-and-Tutorials)
-+ [Collaborative Filtering](#Collaborative Filtering)
-+ [Sequential Recommendation](#Sequential Recommendation)
-+ [News Recommendation](#News Recommendation)
-+ [Interactive Recommendation](#Interactive Recommendation)
-+ [Item Embedding](#Item Embedding)
++ [Collaborative Filtering](#Collaborative-Filtering)
++ [Sequential Recommendation](#Sequential-Recommendation)
++ [News Recommendation](#News-Recommendation)
++ [Interactive Recommendation](#Interactive-Recommendation)
++ [Item Embedding](#Item-Embedding)
 
 ### Surveys and Tutorials
 + [**CSUR'19**] [Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf), by Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay.
