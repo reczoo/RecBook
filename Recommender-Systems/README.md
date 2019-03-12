@@ -6,7 +6,7 @@ A curated list of awesome papers on recommender systems
 + [Sequential Recommendation](#Sequential-Recommendation)
 + [News Recommendation](#News-Recommendation)
 + [Interactive Recommendation](#Interactive-Recommendation)
-+ [Item Embedding](#Item-Embedding)
++ [Item Matching (Recall)](#Item-Embedding)
 
 ### Surveys and Tutorials
 + [**CSUR'19**] [Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf), by Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay.
@@ -35,5 +35,9 @@ A curated list of awesome papers on recommender systems
 
 ### Item Embedding
 1. [**KDD'18**] [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349), Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, Dik Lun Lee. [**Alibaba**]
+
+1. [**KDD'17**] [Meta-Graph Based Recommendation Fusion over Heterogeneous Information Networks](http://www.cse.ust.hk/~hzhaoaf/data/kdd17-paper.pdf), by Huan Zhao, Quanming Yao, Jianda Li, Yangqiu Song and Dik Lun Lee.
+
+
 
 
