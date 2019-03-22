@@ -1,10 +1,12 @@
-# NeuralIR
+# Neural IR
 A curated list of awesome resources on neural information retrieval
 
-+ [Surveys and Tutorials](./README.md#Surveys-and-Tutorials)
-+ [Sponsored Search](./README.md#Sponsored-Search)
-+ [Unbiased Learning to Rank](./README.md#Unbiased-Learning-to-Rank)
-+ [Semantic Matching](./README.md#Semantic-Matching)
++ [Surveys and Tutorials](#Surveys-and-Tutorials)
++ [Sponsored Search](#Sponsored-Search)
++ [Unbiased Learning to Rank](#Unbiased-Learning-to-Rank)
++ [Semantic Matching ](#Semantic-Matching)
++ [Query Suggestion](#Query-Suggestion)
+
 
 ### Surveys and Tutorials
 + [**SIGIR'18**] [Deep Learning for Matching in Search and Recommendation](https://www.comp.nus.edu.sg/~xiangnan/sigir18-deep.pdf)
