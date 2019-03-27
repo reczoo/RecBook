@@ -21,6 +21,9 @@
 
 ### Relational Network
 
+1. [**NeurIPS'18**] [Recurrent Relational Networks](https://arxiv.org/abs/1711.08028), by Rasmus Berg Palm, Ulrich Paquet, Ole Winther. [**Google**]
+    > 本文改进了Simple Relational Network [NIPS'17]的版本，由原来的单层改为多层recurrent relational network，并用于解9x9的数独问题。RRN包含message passing, recurrent node updates, supervised training三步。Message passing即从邻接节点获取融合消息m_ij = f(hi, hj), node updates即利用m_ij更新当前节点hi=g(hi, xi, mi)。最后supervised training构建node classficaiton模型r(hi)或graph classificaiton模型r(sum(hi))。f, g, r都可以是MLP映射。该模型框架比较通用
+
 1. [**NeurIPS'18**] [LinkNet: Relational Embedding for Scene Graph](https://papers.nips.cc/paper/7337-linknet-relational-embedding-for-scene-graph.pdf), by Sanghyun Woo, Dahun Kim, Donghyeon Cho, In So Kweon.
 
 1. [**NeurIPS'17**] [A Simple Neural Network Module for Relational Reasoning](https://papers.nips.cc/paper/7082-a-simple-neural-network-module-for-relational-reasoning.pdf), Adam Santoro, David Raposo, David G. Barrett, Mateusz Malinowski, Razvan Pascanu, Peter Battaglia, Timothy Lillicrap. [**Google**]
