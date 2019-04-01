@@ -18,6 +18,7 @@
 1. [**AAAI'19**] [Session-based Recommendation with Graph Neural Networks](https://arxiv.org/abs/1811.00855), by Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, Tieniu Tan. [**Microsoft**]
 
 1. [**WWW'18**] [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](https://arxiv.org/abs/1806.01973), by Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, Jure Leskovec. [**Pinterest**]
+    > 本文利用GNN的思路(GraphSAGE算法)来处理item (node) embedding，首先利用了boards-pins的包含关系建图，再对neighbors采样(importance sampling)做信息聚合，这里利用item的内容特征也利用item graph的structure信息。聚合之后的vector与自身vector做融合得到更新的节点vector。最终的node embedding supervision使用用户点击行为，用户同一session点击的两个item为正，当前item与随机采到的item为负。负采样做了优化：personalized randomwalk后top2000-5000的样本为hard negatives。离线评价指标为MRR。综上，GNN使用了两个图的信息（boards-pins graph和点击图）。
 
 ### Relational Network
 
