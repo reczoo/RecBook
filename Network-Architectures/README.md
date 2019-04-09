@@ -14,6 +14,7 @@
 ### Graph Convolution Networks 
 
 1. [**AAAI'19**] [Graph Convolutional Networks for Text Classification](https:\\arxiv.org\pdf\1809.05679.pdf), by Liang Yao, Chengsheng Mao, Yuan Luo. [[Notes](./2019.md#aaai19)]
+   > 本文建立了word-word和word-document的一个全局graph，其中word与word之间的边用PMI作为权重，document与word的边使用TF-IDF作为权重，这个graph有效关联了全局的统计信息。相比之前模型针对单个句子建模时只考虑的local context，例如当每个batch只更新当前batch的word向量。但基于graph的模型能有效提取周围node的信息，从而获取了一部分全局信息。Model使用了两层的GCN模型，相当于提取图2-hop的节点信息。最后一层直接将document (node) embedding向量(维度为class label的种类)进行一个softmax进行分类。但是本文的缺陷是只考虑图中已有的节点，如何在test阶段对新的document进行建模还是一个问题。
 
 1. [**AAAI'19**] [Session-based Recommendation with Graph Neural Networks](https://arxiv.org/abs/1811.00855), by Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, Tieniu Tan. [**Microsoft**]
 
