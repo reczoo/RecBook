@@ -10,13 +10,19 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 ## Categorical Representation Learning
 
+
 ### 2019
+1. [**WWW'19**] [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](), by Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang. [**Huawei**]
 
 1. [**AAAI'19**] Accurate and Interpretable Factorization Machines, by Liang Lan, Yu Geng.
 
 1. [**AAAI'19**] [Holographic Factorization Machines for Recommendation](https://www.researchgate.net/publication/330101551_Holographic_Factorization_Machines_for_Recommendation), by Yi Tay, Shuai Zhang, Anh Tuan Luu, Siu Cheung Hui, Lina Yao, Tran Dang Quang Vinh.
 
 1. [**AAAI'19**] [Interaction-aware Factorization Machines for Recommender Systems], by Fuxing Hong, Dongbo Huang, Ge Chen.
+
+1. [**CoRR**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
+
+1. [**CoRR**] [Learning Representations of Categorical Feature Combinations via Self-Attention](https://openreview.net/pdf?id=SyxwW2A5Km), by Chen Xu, Chengzhen Fu, Peng Jiang, Wenwu Ou.
 
 ### 2018
 
@@ -36,7 +42,6 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**CoRR**] Mehul Parsana, Krishna Poola, Yajun Wang, Zhiguang Wang. [Improving Native Ads CTR Prediction by Large Scale Event Embedding and Recurrent Networks](https://arxiv.org/abs/1804.09133), *arXiv:1804.09133*, 2018. [**Microsoft**]
 
-1. [**CoRR**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
 
 ### 2017
 
