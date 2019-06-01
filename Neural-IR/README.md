@@ -36,5 +36,23 @@ A curated list of awesome resources on neural information retrieval
     
 1. [**WSDM'15 Talk**] [Semantic Matching in App Search](http://www.wsdm-conference.org/2015/wp-content/uploads/2014/03/WSDM-TalkSemantic-Matching-in-App-Search.pdf), by Juchao Zhuo, Zeqian Huang, Yunfeng Liu, Zhanhui Kang, Xun Cao, Mingzhi Li, Long Jin. [**Tencent**]
     > 该talk是腾讯应用市场讲的关于app搜索的内容。重点包括：1) App搜索的指标Downloads/ QV (Query views)/ UV (User views)/ CTR/ ROP (Rate of Penetration)/ NDCG; 2) 88%的precise search, 12%的fuzzy search (Content/Category/Function related); 3) 提出用Term + Topic + Tag描述semantic, 用topic和tag补充query和app, 总共million apps用LDA找出1000+ topics; 4) query太短无法理解，用clicked apps做补充，在topic space计算query和app的相似度; 5) 与topic matching相比，tag提供more fine-grained semantics, tag依赖human editorial curation和自动提取两部分。挖倔了90K的tags, top100K的app平均有8.53 tags; 6) 使用LambdaMART训练排序，50+ features, 300K+ pairwise training, 3000+ test samples. 得到NDCG=0.9553, CTR在0.58~0.7。[[Read more...](http://www.cctime.com/html/2015-3-4/2015341455368944.htm)]
-     
+    
+    
+### Query Suggestion
+1. [**SIGIR'19**] Context Attentive Document Ranking and Query Suggestion
+
+1. [**SIGIR'18**] [Attention-based Hierarchical Neural Query Suggestion](https://arxiv.org/abs/1805.02816), by Wanyu Chen, Fei Cai, Honghui Chen, Maarten de Rijke. 
+
+1. [**ICLR'18**] [Multi-Task Learning for Document Ranking and Query Suggestion](https://openreview.net/pdf?id=SJ1nzBeA-), by Wasi Ahmad, Kai-Wei Chang, Hongning Wang.
+
+1. [**IJCAI'18**] [Improving Entity Recommendation with Search Log and Multi-Task Learning](https://www.ijcai.org/proceedings/2018/0571.pdf), by Jizhou Huang, Wei Zhang, Yaming Sun, Haifeng Wang, Ting Liu. [**Baidu**]
+
+1. [**WWW'18**] [Query Suggestion with Feedback Memory Network](https://dl.acm.org/citation.cfm?doid=3178876.3186068), by Bin Wu, Chenyan Xiong, Maosong Sun, Zhiyuan Liu.
+
+1. [**CIKM'18**] [RIN: Reformulation Inference Network for Context-Aware Query Suggestion](https://jyunyu.csie.org/docs/pubs/cikm2018paper.pdf), by Jyun-Yu Jiang and Wei Wang.
+
+
+
+
+
     
