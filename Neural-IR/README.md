@@ -39,6 +39,7 @@ A curated list of awesome resources on neural information retrieval
     
     
 ### Query Suggestion
+1. [**WWW'19**] [Click Feedback-Aware Query Recommendation Using Adversarial Examples](), by Ruirui Li, Liangda Li, Xian Wu, Yunhong Zhou, Wei Wang.
 1. [**SIGIR'19**] Context Attentive Document Ranking and Query Suggestion
 
 1. [**SIGIR'18**] [Attention-based Hierarchical Neural Query Suggestion](https://arxiv.org/abs/1805.02816), by Wanyu Chen, Fei Cai, Honghui Chen, Maarten de Rijke. 
