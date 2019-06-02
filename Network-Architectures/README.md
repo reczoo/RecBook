@@ -13,6 +13,14 @@
 
 ### Graph Convolution Networks 
 
+1. [**SIGIR'19**] [Neural Graph Collaborative Filtering](https://arxiv.org/abs/1905.08108), by Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, Tat-Seng Chua.
+    > 传统的CF没有显示的将user-item的高阶相邻关系映射到embedding中，本文提出了基于GNN中的embedding propagation机制将user的embedding传递给item、item的embedding传递给user，通过多层embedding propagation累加，捕获high-order connectivity. 与之前work中item graph不同，本文的message passing包含一个点积项，即把u_i与i_j的点积进行传递，有点类似relational network中的做法。同时，这样建模也能看做是SVD++ (neighborhood)算法的generalization。最后CF依然是u和i的点积来计算，并用BPR loss来利用implicit feedback做训练。最后评测了NDCG@K和Recall@K。
+
+1. [**WWW'19**] [Graph Neural Networks for Social Recommendation](https://arxiv.org/abs/1902.07243), by Wenqi Fan, Yao Ma, Qing Li, Yuan He, Eric Zhao, Jiliang Tang, Dawei Yin. [**JD**]
+
+1. [**WWW'19**] [Heterogeneous Graph Attention Network](https://arxiv.org/abs/1903.07293), by Xiao Wang, Houye Ji, Chuan Shi, Bai Wang, Peng Cui, P. Yu, Yanfang Ye.
+    > 当前的GNN都是建立在同构图(homogeneous)上的模型，本文考虑了节点的不同性质(heterogeneous)，节点与节点之间通过meta-path建立连接。HAN提出了node-level和semantic-level两层attention，首先考虑了同一类型meta-path的节点中的重要性并做attention aggregation, 每种meta-path得到一个node vector。然后再对K个node vectors计算相应地重要性再做aggregation，得到最终的node representation，用于节点分类或聚类任务。实验对比了DeepWalk、GCN和GAT算法，都有提高。
+
 1. [**AAAI'19**] [Graph Convolutional Networks for Text Classification](https:\\arxiv.org\pdf\1809.05679.pdf), by Liang Yao, Chengsheng Mao, Yuan Luo. [[Notes](./2019.md#aaai19)]
    > 本文建立了word-word和word-document的一个全局graph，其中word与word之间的边用PMI作为权重，document与word的边使用TF-IDF作为权重，这个graph有效关联了全局的统计信息。相比之前模型针对单个句子建模时只考虑的local context，例如当每个batch只更新当前batch的word向量。但基于graph的模型能有效提取周围node的信息，从而获取了一部分全局信息。Model使用了两层的GCN模型，相当于提取图2-hop的节点信息。最后一层直接将document (node) embedding向量(维度为class label的种类)进行一个softmax进行分类。但是本文的缺陷是只考虑图中已有的节点，如何在test阶段对新的document进行建模还是一个问题。
 
