@@ -20,11 +20,11 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**WWW'19**] [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](), by Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang. [**Huawei**]
 
-1. [**AAAI'19**] Accurate and Interpretable Factorization Machines, by Liang Lan, Yu Geng.
+1. [**AAAI'19**] [Accurate and Interpretable Factorization Machines](https://aaai.org/ojs/index.php/AAAI/article/view/4315), by Liang Lan, Yu Geng.
 
 1. [**AAAI'19**] [Holographic Factorization Machines for Recommendation](https://www.researchgate.net/publication/330101551_Holographic_Factorization_Machines_for_Recommendation), by Yi Tay, Shuai Zhang, Anh Tuan Luu, Siu Cheung Hui, Lina Yao, Tran Dang Quang Vinh.
 
-1. [**AAAI'19**] [Interaction-aware Factorization Machines for Recommender Systems], by Fuxing Hong, Dongbo Huang, Ge Chen.
+1. [**AAAI'19**] [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/abs/1902.09757), by Fuxing Hong, Dongbo Huang, Ge Chen.
 
 1. [**CoRR**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
 
@@ -115,6 +115,9 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 ## Multimodal Representation Learning
 1. [**AAAI'19**] [Joint Representation Learning for Multi-Modal Transportation Recommendation](https://hurenjun.github.io/pubs/aaai2019.pdf), by Hao Liu, Ting Li, Renjun Hu, Yanjie Fu, Jingjing Gu, Hui Xiong. [**Baidu**]
 
-1. [**IJCAI'15**] Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang. [Image Feature Learning for Cold Start Problem in Display Advertising](https://www.ijcai.org/Proceedings/15/Papers/524.pdf), *IJCAI*, 2015. [**Tencent**]
+1. [**IJCAI'15**] [Image Feature Learning for Cold Start Problem in Display Advertising](https://www.ijcai.org/Proceedings/15/Papers/524.pdf), by Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang. [**Tencent**]
+
+## AutoML]
+1. [**SIGIR'19**] [Bayesian Personalized Feature Interaction Selection for Factorization Machines](https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/chen-2019-bayesian.pdf), by Yifan Chen, Pengjie Ren, Yang Wang and Maarten de Rijke.
 
 
