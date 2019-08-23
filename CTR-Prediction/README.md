@@ -12,6 +12,12 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 
 ### 2019
+1. [**SIGIR'19**] [Graph Intention Network for Click-through Rate Prediction in Sponsored Search](https://dl.acm.org/citation.cfm?id=3331283), by Feng Li, Zhenrui Chen, Pengjie Wang, Yi Ren, Di Zhang and Xiaoyu Zhu. [**Alibaba**]
+
+1. [**SIGIR'19**] [Warm Up Cold-start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings](https://arxiv.org/abs/1904.11547), by Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang and Qing He.
+
+1. [**SIGIR'19**] [Order-aware Embedding Neural Network for CTR Prediction](https://dl.acm.org/citation.cfm?id=3331332), by Wei Guo, Ruiming Tang, Huifeng Guo, Jianhua Han, Yuzhou Zhang and Wen Yang. [**Huawei**]
+
 1. [**WWW'19**] [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](), by Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang. [**Huawei**]
 
 1. [**AAAI'19**] Accurate and Interpretable Factorization Machines, by Liang Lan, Yu Geng.
