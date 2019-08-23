@@ -17,6 +17,9 @@ A curated list of awesome resources on neural information retrieval
 + [**SIGIR'16**] [Scalable Semantic Matching of Queries to Ads in Sponsored Search Advertising](https://arxiv.org/pdf/1607.01869.pdf), by Mihajlo Grbovic, Nemanja Djuric, Vladan Radosavljevic, Fabrizio Silvestri, Ricardo Baeza-Yates, Andrew Feng, Erik Ordentlich, Lee Yang, Gavin Owens. [**Yahoo**]
 + [**SIGIR'09**] [Optimizing Search Engine Revenue in Sponsored Search](https://dl.acm.org/citation.cfm?id=1572042), by Yunzhang Zhu, Gang Wang, Junli Yang, Dakan Wang, Jun Yan, Jian Hu, Zheng Chen. [**Microsoft**]
 
+### Personalized Search
++ [**SIGIR'19**] [PSGAN: A Minimax Game for Personalized Search with Limited and Noisy Click Data](http://playbigdata.ruc.edu.cn/dou/publication/2019_sigir_psgan.pdf), by Shuqi Lu, Zhicheng Dou, Jun Xu, Jian-Yun Nie and Ji-Rong Wen. 
+
 ### Unbiased Learning to Rank
 + [**SIGIR'18**] [Unbiased Learning to Rank with Unbiased Propensity Estimation](https://arxiv.org/abs/1804.05938), by Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, W. Bruce Croft.
 + [**Arxiv'18**] [A Novel Algorithm for Unbiased Learning to Rank](https://arxiv.org/abs/1809.05818), by Ziniu Hu, Yang Wang, Qu Peng, Hang Li. [**ByteDance**]
