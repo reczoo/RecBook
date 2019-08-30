@@ -12,6 +12,15 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 
 ### 2019
+
+1. [**CoRR'19**] [Operation-aware Neural Networks for User Response Prediction](https://arxiv.org/abs/1904.12579), by Yi Yang, Baile Xu, Furao Shen, Jian Zhao. 
+
+1. [**IJCAI'19**] [Representation Learning-Assisted Click-Through Rate Prediction](https://arxiv.org/abs/1906.04365), by Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, Yanlong Du. [**Alibaba**]
+
+1. [**IJCAI'19**] [Deep Session Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1905.06482), by Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, Keping Yang. [**Alibaba**]
+
+1. [**KDD'19**] [Deep Spatio-Temporal Neural Networks for Click-Through Rate Prediction](https://arxiv.org/abs/1906.03776), by Wentao Ouyang, Xiuwu Zhang, Li Li, Heng Zou, Xin Xing, Zhaojie Liu, Yanlong Du. [**Alibaba**]
+
 1. [**SIGIR'19**] [Graph Intention Network for Click-through Rate Prediction in Sponsored Search](https://dl.acm.org/citation.cfm?id=3331283), by Feng Li, Zhenrui Chen, Pengjie Wang, Yi Ren, Di Zhang and Xiaoyu Zhu. [**Alibaba**]
 
 1. [**SIGIR'19**] [Warm Up Cold-start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings](https://arxiv.org/abs/1904.11547), by Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang and Qing He.
@@ -104,6 +113,14 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
    > 本文是比较早做广告CTR预估的文章，采用最经典的LR模型来预测新广告的CTR。本文的CTR是统计意义上的点击率，并与query无关。模型利用了bid term CTR, related term CTR, ad quality, order相关的特征做线性回归，以cross-entropy loss作为regression模型预测CTR的概率。 在数值特征上，采用了x, log(1 + x), x^2的组合，以及对query frequency划分bin方式。实验表明，广告在100次以上view的情况下CTR的预估能逼近真实值。本文支出query相关的CTR预估是重要的方向。
 
 ## User Modeling
+1. [**CIKM'19**] [BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://arxiv.org/abs/1904.06690), by Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, Peng Jiang. [**Alibaba**] 
+
+1. [**KDD'19**] [Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction](https://arxiv.org/abs/1905.09248), by Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, Kun Gai. [**Alibaba**] 
+
+1. [**CoRR'19**] [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874), by Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, Wenwu Ou. [**Alibaba**] 
+
+1. [**CoRR'19**] [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](https://arxiv.org/abs/1904.08030), by Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Pipei Huang, Huan Zhao, Guoliang Kang, Qiwei Chen, Wei Li, Dik Lun Lee. [**Alibaba**] 
+
 1. [**AAAI'19**] [Deep Interest Evolution Network for Click-Through Rate Prediction](https://arxiv.org/abs/1809.03672), by Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, Kun Gai. [**Alibaba**]
 
 1. [**KDD'18**] [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1706.06978.pdf), by Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, Kun Gai. [**Alibaba**]
