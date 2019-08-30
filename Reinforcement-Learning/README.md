@@ -7,6 +7,9 @@ A curated list of awesome deep reinforcement learning research in search and rec
 
 ### Papers
 
+1. [**CoRR'19**] [Reinforcement Learning to Optimize Long-term User Engagement in Recommender Systems](https://arxiv.org/abs/1902.05570), by Lixin Zou, Long Xia, Zhuoye Ding, Jiaxing Song, Weidong Liu, Dawei Yin. [**JD**]
+
+1. [**CoRR'19**] [Diversity-Promoting Deep Reinforcement Learning for Interactive Recommendation](https://arxiv.org/abs/1903.07826), by Yong Liu, Yinan Zhang, Qiong Wu, Chunyan Miao, Lizhen Cui, Binqiang Zhao, Yin Zhao, Lu Guan. [**Alibaba**]
 
 1. [**CoRR'19**] [Toward Simulating Environments in Reinforcement Learning Based Recommendations](https://arxiv.org/abs/1906.11462), by Xiangyu Zhao, Long Xia, Zhuoye Ding, Dawei Yin, Jiliang Tang. [**JD**]
 
