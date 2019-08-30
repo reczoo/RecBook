@@ -140,7 +140,7 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**IJCAI'15**] [Image Feature Learning for Cold Start Problem in Display Advertising](https://www.ijcai.org/Proceedings/15/Papers/524.pdf), by Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang. [**Tencent**]
 
-## AutoML]
+## AutoML
 1. [**SIGIR'19**] [Bayesian Personalized Feature Interaction Selection for Factorization Machines](https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/chen-2019-bayesian.pdf), by Yifan Chen, Pengjie Ren, Yang Wang and Maarten de Rijke.
 
 
