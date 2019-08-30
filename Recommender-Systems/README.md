@@ -23,20 +23,32 @@ A curated list of awesome papers on recommender systems
 1. Suvash Sedhain, Aditya Krishna Menon, Scott Sanner, Lexing Xie. [AutoRec: Autoencoders Meet Collaborative Filtering](http://users.cecs.anu.edu.au/~u5098633/papers/www15.pdf), **WWW**, 2015.
    > 本文基于Autoencoder的思想来解决CF问题。CF矩阵的每一行或者每一列都可以看作是一个样本（特征为rating值向量），Autoencoder的应用就是将样本的特征向量通过一个网络映射到latent space, 再通过另一个网络进行还原。改进点就是这里的网络映射考虑rating里的缺失值，BP传播只处理observed value。实验中，基于物品维度的映射(I-AutoRec)比基于用户维度的映射(U-AutoRec)效果更好。
 
+### TopK Item Retrieval
+1. [**KDD'19**] [Real-time Attention Based Look-alike Model for Recommender System](https://arxiv.org/abs/1906.05022), by Yudan Liu, Kaikai Ge, Xu Zhang, Leyu Lin. [**Tencent**]
+
+1. [**CoRR'19**] [Joint Optimization of Tree-based Index and Deep Model for Recommender Systems](https://arxiv.org/abs/1902.07565), by Han Zhu, Daqing Chang, Ziru Xu, Pengye Zhang, Xiang Li, Jie He, Han Li, Jian Xu, Kun Gai. [**Alibaba**]
+
+1. [**KDD'17**] [Meta-Graph Based Recommendation Fusion over Heterogeneous Information Networks](http://www.cse.ust.hk/~hzhaoaf/data/kdd17-paper.pdf), by Huan Zhao, Quanming Yao, Jianda Li, Yangqiu Song and Dik Lun Lee.
 
 ### Sequential Recommendation
+
+1. [**KDD'19**] [Hierarchical Gating Networks for Sequential Recommendation](https://arxiv.org/abs/1906.09217), by Chen Ma, Peng Kang, Xue Liu.
+
 1. [**AAAI'14**] Yuyu Zhang, Hanjun Dai, Chang Xu, Jun Feng, Taifeng Wang, Jiang Bian, Bin Wang, Tie-Yan Liu. [Sequential Click Prediction for Sponsored Search with Recurrent Neural Networks](http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/download/8529/8581), *AAAI*, 2014.
 
 ### News Recommendation
+
+1. [**KDD'19**] [NPA: Neural News Recommendation with Personalized Attention](https://arxiv.org/pdf/1907.05559.pdf), by Chuhan Wu, Fangzhao Wu, Mingxiao An, Jianqiang Huang, Yongfeng Huang, Xing Xie. [**Google**]
+
+1. [**ACL'19**] [Neural News Recommendation with Long- and Short-term User Representations](https://www.aclweb.org/anthology/P19-1033), by Mingxiao An, Fangzhao Wu, Chuhan Wu, Kun Zhang, Zheng Liu, Xing Xie. [**Microsoft**]
 
 ### Interactive Recommendation
 1. [**KDD'18**] [Q&R: A Two-Stage Approach Toward Interactive Recommendation](http://alexbeutel.com/papers/q-and-r-kdd2018.pdf), by Konstantina Christakopoulou, Alex Beutel, Rui Li, Sagar Jain, Ed H. Chi. [**Google**]
 
 
-### Item Matching
 
-1. [**KDD'17**] [Meta-Graph Based Recommendation Fusion over Heterogeneous Information Networks](http://www.cse.ust.hk/~hzhaoaf/data/kdd17-paper.pdf), by Huan Zhao, Quanming Yao, Jianda Li, Yangqiu Song and Dik Lun Lee.
+### Explainablity
 
-
+1. [**SIGIR'19**] [A Capsule Network for Recommendation and Explaining What You Like and Dislike](), by Chenliang Li, Cong Quan, Li Peng, Yunwei Qi, Yuming Deng, Libing Wu. [**Alibaba**]
 
 
