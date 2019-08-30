@@ -38,3 +38,8 @@ A curated list of awesome deep reinforcement learning research in search and rec
 1. [**ICDM'18**] [A Reinforcement Learning Framework for Explainable Recommendation](https://www.microsoft.com/en-us/research/uploads/prod/2018/08/main.pdf), by Xiting Wang, Yiru Chen, Jie Yang, Le Wu, Zhengtao Wu, Xing Xie. [**Microsoft**]
 
 1. [**SIGIR'17**] [Reinforcement Learning to Rank with Markov Decision Process](http://www.bigdatalab.ac.cn/~junxu/publications/SIGIR2017_RL_L2R.pdf), by Zeng Wei, Jun Xu, Yanyan Lan, Jiafeng Guo, Xueqi Cheng.
+
+### Industrial Reports
+1. [201x] [强化学习在阿里的技术演进与业务创新](https://github.com/CharmyZ/note-book-blog/raw/master/%E3%80%8A%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%9C%A8%E9%98%BF%E9%87%8C%E7%9A%84%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E4%B8%8E%E4%B8%9A%E5%8A%A1%E5%88%9B%E6%96%B0%E3%80%8B.pdf), **Alibaba**.
+
+
