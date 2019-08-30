@@ -2,14 +2,27 @@
 A curated list of awesome deep reinforcement learning research in search and recommendation
 
 ### Tutorials
-+ [WSDM'19 Keynote] [Reinforcement Learning to Rank](https://dl.acm.org/citation.cfm?id=3291605), by Maarten de Rijke.
++ [**SIGWEB'19**] [Deep Reinforcement Learning for Search, Recommendation, and Online Advertising: A Survey](https://dl.acm.org/citation.cfm?id=3320500), by Xiangyu Zhao, Long Xia, Jiliang Tang, and Dawei Yin. [**JD**]
++ [**WSDM'19** Keynote] [Reinforcement Learning to Rank](https://dl.acm.org/citation.cfm?id=3291605), by Maarten de Rijke.
 
 ### Papers
+
+
+1. [**CoRR'19**] [Toward Simulating Environments in Reinforcement Learning Based Recommendations](https://arxiv.org/abs/1906.11462), by Xiangyu Zhao, Long Xia, Zhuoye Ding, Dawei Yin, Jiliang Tang. [**JD**]
+
+1. [**CoRR'19**] [Model-Based Reinforcement Learning for Whole-Chain Recommendations](https://arxiv.org/pdf/1902.03987.pdf), by Xiangyu Zhao, Long Xia, Yihong Zhao, Dawei Yin, Jiliang Tang. [**JD**]
+
+1. [**ICML'19**] [Generative Adversarial User Model for Reinforcement Learning Based Recommendation System](https://arxiv.org/pdf/1812.10613.pdf), by Xinshi Chen, Shuang Li, Hui Li, Shaohua Jiang, Yuan Qi, Le Song. [**Ant Financial**]
+
+1. [**IJCAI'19**] [Reinforcement Learning for Slate-based Recommender Systems: A Tractable Decomposition and Practical Methodology](https://arxiv.org/abs/1905.12767), by Eugene Ie, Vihan Jain, Jing Wang, Sanmit Narvekar, Ritesh Agarwal, Rui Wu, Heng-Tze Cheng, Morgane Lustman, Vince Gatto, Paul Covington, Jim McFadden, Tushar Chandra, Craig Boutilier. [**Google**]
+
 1. [**AAAI'19**] [Large-scale Interactive Recommendation with Tree-structured Policy Gradient](https://arxiv.org/abs/1811.05869), by Haokun Chen, Xinyi Dai, Han Cai, Weinan Zhang, Xuejian Wang, Ruiming Tang, Yuzhou Zhang, Yong Yu. [**Huawei**]
 
-1. [**AAAI'19**] [Hierarchical Reinforcement Learning for Course Recommendation in MOOCs], Jing Zhang, Bowen Hao, Bo Chen, Cuiping Li, Hong Chen, Jimeng Sun.
+1. [**AAAI'19**] [Hierarchical Reinforcement Learning for Course Recommendation in MOOCs], by Jing Zhang, Bowen Hao, Bo Chen, Cuiping Li, Hong Chen, Jimeng Sun.
 
-1. [**AAAI'19**] [Surveys Without Questions: A Reinforcement Learning Approach], Atanu R Sinha, Deepali Jain, Nikhil Sheoran, Sopan Khosla, Reshmi Sasidharan. [**Adobe**]
+1. [**AAAI'19**] [Large-scale Interactive Recommendation with Tree-structured Policy Gradient](), by . [**Huawei**]
+
+1. [**AAAI'19**] [Virtual-Taobao: Virtualizing Real-world Online Retail Environment for Reinforcement Learning](https://arxiv.org/abs/1805.10000), by Jing-Cheng Shi, Yang Yu, Qing Da, Shi-Yong Chen, An-Xiang Zeng. [**Alibaba**]
 
 1. [**WSDM'19**] [Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/abs/1812.02353), by Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, Ed Chi. [**Google**]
 
