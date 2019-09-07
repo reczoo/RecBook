@@ -4,12 +4,9 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 + [Categorical Representation Learning](#Categorical-Representation-Learning)
    + [2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [2015](#2015) | [2014](#2014) | [2013](#2013) | [2010](#2010) | [2007](#2007) 
-+ [User Modeling](#User-Modeling)
-+ [Multitask Learning](#Multitask-Learning)
-+ [Multimodal Representation Learning](#Multimodal-Representation-Learning)
++ [User Behaviour Modeling](#User-Behaviour-Modeling)
 
 ## Categorical Representation Learning
-
 
 ### 2019
 
@@ -27,7 +24,7 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**SIGIR'19**] [Order-aware Embedding Neural Network for CTR Prediction](https://dl.acm.org/citation.cfm?id=3331332), by Wei Guo, Ruiming Tang, Huifeng Guo, Jianhua Han, Yuzhou Zhang and Wen Yang. [**Huawei**]
 
-1. [**WWW'19**] [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](), by Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang. [**Huawei**]
+1. [**WWW'19**] [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/abs/1904.04447), by Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang. [**Huawei**]
 
 1. [**AAAI'19**] [Accurate and Interpretable Factorization Machines](https://aaai.org/ojs/index.php/AAAI/article/view/4315), by Liang Lan, Yu Geng.
 
@@ -38,6 +35,8 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 1. [**CoRR**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
 
 1. [**CoRR**] [Learning Representations of Categorical Feature Combinations via Self-Attention](https://openreview.net/pdf?id=SyxwW2A5Km), by Chen Xu, Chengzhen Fu, Peng Jiang, Wenwu Ou.
+
+1. [**arXiv'19**] [Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search](https://arxiv.org/abs/1803.10739), by Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic. [**Yahoo**, **Criteo**]
 
 ### 2018
 
@@ -112,8 +111,7 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 + [**WWW'07**] Matthew Richardson, Ewa Dominowska, Robert Ragno. [Predicting Clicks: Estimating the Click-Through Rate for New Ads](https://dl.acm.org/citation.cfm?id=1242643), *WWW*, 2007. [**Microsoft**]
    > 本文是比较早做广告CTR预估的文章，采用最经典的LR模型来预测新广告的CTR。本文的CTR是统计意义上的点击率，并与query无关。模型利用了bid term CTR, related term CTR, ad quality, order相关的特征做线性回归，以cross-entropy loss作为regression模型预测CTR的概率。 在数值特征上，采用了x, log(1 + x), x^2的组合，以及对query frequency划分bin方式。实验表明，广告在100次以上view的情况下CTR的预估能逼近真实值。本文支出query相关的CTR预估是重要的方向。
 
-## User Modeling
-1. [**CIKM'19**] [BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://arxiv.org/abs/1904.06690), by Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, Peng Jiang. [**Alibaba**] 
+## User Behaviour Modeling
 
 1. [**KDD'19**] [Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction](https://arxiv.org/abs/1905.09248), by Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, Kun Gai. [**Alibaba**] 
 
@@ -125,22 +123,8 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**KDD'18**] [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1706.06978.pdf), by Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, Kun Gai. [**Alibaba**]
 
-## Multitask Learning
-1. [**CoRR'19**] [Deep Bayesian Multi-Target Learning for Recommender Systems](https://arxiv.org/abs/1902.09154), by Qi Wang, Zhihui Ji, Huasheng Liu, Binqiang Zhao. [**Alibaba**]
 
-1. [**KDD'19**] [Predicting Different Types of Conversions with Multi-Task Learning in Online Advertising](https://arxiv.org/abs/1907.10235), by Junwei Pan, Yizhi Mao, Alfonso Lobos Ruiz, Yu Sun, Aaron Flores. [**Verizon Media**, **Indeed**]
 
-1. [**KDD'18**] [Perceive Your Users in Depth: Learning Universal User Representations from Multiple E-commerce Tasks](https://arxiv.org/abs/1805.10727), by Yabo Ni, Dan Ou, Shichen Liu, Xiang Li, Wenwu Ou, Anxiang Zeng, Luo Si. [**Alibaba**]
 
-1. [**SIGIR'18**] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, Kun Gai. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931), *SIGIR*, 2018. [**Alibaba**]
-   > 本文提出了基于multi-task learning的框架ESMM首次将CTR和CVR两个task进行关联学习，CTR和CVR满足pCTCVR = pCTR * pCVR。 pCVR一般是表示在点击后产生转化的概率，之前的模型都使用clicked samples进行训练，又在预测时却在all impression samples来做预测，产生sample selection bias问题。同时CVR的正样本数据要远小于CTR数据，所以两个任务的共享可优化特征表征。宏观上，CVR能使用中间步骤CTR标签，充分利用了数据特性。[[Read more...](https://zhuanlan.zhihu.com/p/37562283)]
-
-## Multimodal Representation Learning
-1. [**AAAI'19**] [Joint Representation Learning for Multi-Modal Transportation Recommendation](https://hurenjun.github.io/pubs/aaai2019.pdf), by Hao Liu, Ting Li, Renjun Hu, Yanjie Fu, Jingjing Gu, Hui Xiong. [**Baidu**]
-
-1. [**IJCAI'15**] [Image Feature Learning for Cold Start Problem in Display Advertising](https://www.ijcai.org/Proceedings/15/Papers/524.pdf), by Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang. [**Tencent**]
-
-## AutoML
-1. [**SIGIR'19**] [Bayesian Personalized Feature Interaction Selection for Factorization Machines](https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/chen-2019-bayesian.pdf), by Yifan Chen, Pengjie Ren, Yang Wang and Maarten de Rijke.
 
 

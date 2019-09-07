@@ -1,4 +1,11 @@
 # Graphs
+A curated list of awesome resources on graph learning
+
++ [Graph Embedding](#KGraph-Embedding)
++ [Knowledge Graph](#Knowledge-Graph)
++ [Graph Neural Networks](#Graph-Neural-Networks)
++ [Relational Network](#Relational-Network)
+
 
 ### Graph Embedding
 1. [**KDD'18**] [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1803.02349), Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, Dik Lun Lee. [**Alibaba**]
@@ -9,3 +16,7 @@
 
 ### Knowledge Graph
 1. [**CIKM'18**] [RippleNet: Propagating User Preferences on the Knowledge Graph for Recommender Systems](https://arxiv.org/abs/1803.03467), by Hongwei Wang, Fuzheng Zhang, Jialin Wang, Miao Zhao, Wenjie Li, Xing Xie, Minyi Guo. 
+
+### Graph Neural Networks
+
+### Relational Network
