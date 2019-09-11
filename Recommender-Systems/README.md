@@ -6,6 +6,7 @@ A curated list of awesome papers on recommender systems
 + [TopK Item Retrieval](#TopK-Item-Retrieval)
 + [Sequential Recommendation](#Sequential-Recommendation)
 + [News Recommendation](#News-Recommendation)
++ [Cross-Domain Recommendation](#Cross-Domain-Recommendation)
 + [Interactive Recommendation](#Interactive-Recommendation)
 + [Explainable Recommendation](#Explainable-Recommendation)
 
@@ -53,9 +54,20 @@ A curated list of awesome papers on recommender systems
 
 ### News Recommendation
 
+1. [**Arxiv'19] [Learning Cross-Domain Representation with Multi-Graph Neural Network](https://arxiv.org/abs/1905.10095), by Yi Ouyang, Bin Guo, Xing Tang, Xiuqiang He, Jian Xiong, Zhiwen Yu. [**Tencent**]
+
+1. [**IJCAI'19**] [DARec: Deep Domain Adaptation for Cross-Domain Recommendation via Transferring Rating Patterns](https://arxiv.org/abs/1905.10760), by Feng Yuan, Lina Yao, Boualem Benatallah. 
+
 1. [**KDD'19**] [NPA: Neural News Recommendation with Personalized Attention](https://arxiv.org/pdf/1907.05559.pdf), by Chuhan Wu, Fangzhao Wu, Mingxiao An, Jianqiang Huang, Yongfeng Huang, Xing Xie. [**Google**]
 
 1. [**ACL'19**] [Neural News Recommendation with Long- and Short-term User Representations](https://www.aclweb.org/anthology/P19-1033), by Mingxiao An, Fangzhao Wu, Chuhan Wu, Kun Zhang, Zheng Liu, Xing Xie. [**Microsoft**]
+
+### Cross-Domain Recommendation
+1. [**WWW'19**] [Cross-domain Recommendation Without Sharing User-relevant Data](https://dl.acm.org/citation.cfm?id=3313538), by Chen Gao, Xiangning Chen, Fuli Feng, Kai Zhao, Xiangnan He, Yong Li, Depeng Jin.
+
+1. [**KDD'18**] [Learning and Transferring IDs Representation in E-commerce](https://arxiv.org/abs/1712.08289), by Kui Zhao, Yuechuan Li, Zhaoqian Shuai, Cheng Yang. [**Alibaba**]
+
+1. [**IJCAI'17**] [Cross-Domain Recommendation: An Embedding and Mapping Approach](https://www.ijcai.org/proceedings/2017/0343.pdf), by Tong Man, Huawei Shen, Xiaolong Jin, Xueqi Cheng. 
 
 ### Interactive Recommendation
 1. [**KDD'18**] [Q&R: A Two-Stage Approach Toward Interactive Recommendation](http://alexbeutel.com/papers/q-and-r-kdd2018.pdf), by Konstantina Christakopoulou, Alex Beutel, Rui Li, Sagar Jain, Ed H. Chi. [**Google**]
