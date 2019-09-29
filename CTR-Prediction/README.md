@@ -32,7 +32,7 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**AAAI'19**] [Interaction-aware Factorization Machines for Recommender Systems](https://arxiv.org/abs/1902.09757), by Fuxing Hong, Dongbo Huang, Ge Chen.
 
-1. [**CoRR**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
+1. [**CIKM'19**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
 
 1. [**CoRR**] [Learning Representations of Categorical Feature Combinations via Self-Attention](https://openreview.net/pdf?id=SyxwW2A5Km), by Chen Xu, Chengzhen Fu, Peng Jiang, Wenwu Ou.
 
