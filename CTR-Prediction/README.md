@@ -10,7 +10,11 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 ### 2019
 
-1. [**CoRR'19**] [Operation-aware Neural Networks for User Response Prediction](https://arxiv.org/abs/1904.12579), by Yi Yang, Baile Xu, Furao Shen, Jian Zhao. 
+1. [**Arxiv'19**] [FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine](https://arxiv.org/abs/1905.06336), by Junlin Zhang, Tongwen Huang, Zhiqi Zhang.  [**Sina Weibo**]
+
+1. [**RecSys'19**] [FiBiNET: Combining Feature Importance and Bilinear feature Interaction for Click-Through Rate Prediction](https://arxiv.org/abs/1905.09433), by Tongwen Huang, Zhiqi Zhang, Junlin Zhang. [**Sina Weibo**]
+
+1. [**Arxiv'19**] [Operation-aware Neural Networks for User Response Prediction](https://arxiv.org/abs/1904.12579), by Yi Yang, Baile Xu, Furao Shen, Jian Zhao. 
 
 1. [**IJCAI'19**] [Representation Learning-Assisted Click-Through Rate Prediction](https://arxiv.org/abs/1906.04365), by Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, Yanlong Du. [**Alibaba**]
 
@@ -34,9 +38,9 @@ A list of papers on CTR/CVR prediction for online advertising, recommendation, a
 
 1. [**CIKM'19**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.
 
-1. [**CoRR**] [Learning Representations of Categorical Feature Combinations via Self-Attention](https://openreview.net/pdf?id=SyxwW2A5Km), by Chen Xu, Chengzhen Fu, Peng Jiang, Wenwu Ou.
+1. [**Arxiv'19**] [Learning Representations of Categorical Feature Combinations via Self-Attention](https://openreview.net/pdf?id=SyxwW2A5Km), by Chen Xu, Chengzhen Fu, Peng Jiang, Wenwu Ou.
 
-1. [**arXiv'19**] [Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search](https://arxiv.org/abs/1803.10739), by Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic. [**Yahoo**, **Criteo**]
+1. [**Arxiv'19**] [Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search](https://arxiv.org/abs/1803.10739), by Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic. [**Yahoo**, **Criteo**]
 
 ### 2018
 
