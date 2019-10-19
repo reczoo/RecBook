@@ -6,7 +6,7 @@
 + [刘奕群](http://www.thuir.cn/group/~YQLiu/) — 信息检索 & 机器阅读理解
 + [唐杰](http://keg.cs.tsinghua.edu.cn/jietang/) — 图学习 & 知识图谱 & 推荐系统
 + [崔鹏](http://pengcui.thumedialab.com/) — 图学习 & 因果推理
-+ [王建勇](http://dbgroup.cs.tsinghua.edu.cn/wangjy/)，IEEE Fellow — NLP & Review Recommendation
++ [王建勇](http://dbgroup.cs.tsinghua.edu.cn/wangjy/)，IEEE Fellow — NLP & 推荐系统
 
 ### 北京大学
 + [张铭](http://net.pku.edu.cn/dlib/mzhang/) — 图学习
