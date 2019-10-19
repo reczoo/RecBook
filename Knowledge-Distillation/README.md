@@ -3,6 +3,9 @@
 ### Understanding KD
 1. [**ICML'19**] [Towards Understanding Knowledge Distillation](http://proceedings.mlr.press/v97/phuong19a.html), by Mary Phuong, Christoph Lampert. 
 
+1. [**Arxiv'18**] [Training Deep Neural Networks in Generations: A More Tolerant Teacher Educates Better Students
+](https://arxiv.org/abs/1805.05551), by Chenglin Yang, Lingxi Xie, Siyuan Qiao, Alan Yuille.
+
 ### Knowledge Type
 1. [**CVPR'19**] [Relational Knowledge Distillation](http://openaccess.thecvf.com/content_CVPR_2019/html/Park_Relational_Knowledge_Distillation_CVPR_2019_paper.html), by Wonpyo Park, Dongju Kim, Yan Lu, Minsu Cho.
 
@@ -111,5 +114,5 @@ Co-teaching: Robust training of deep neural networks with extremely noisy labels
 
 + **Recommendation**
 1. Adversarial Distillation for Efficient Recommendation with External Knowledge
-
+1. [**Arxiv'19**] [Binarized Collaborative Filtering with Distilling Graph Convolutional Networks](https://arxiv.org/abs/1906.01829), by Haoyu Wang, Defu Lian, Yong Ge.
 
