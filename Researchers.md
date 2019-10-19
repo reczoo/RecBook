@@ -26,7 +26,10 @@
 
 + [徐君](http://info.ruc.edu.cn/academic_professor.php?teacher_id=169) — 信息检索
     > 徐君分别于2001年和2006年获得南开大学学士学位和博士学位。毕业后先后就职于微软亚洲研究院、华为诺亚方舟实验室和中科院计算所，于2018年9月加入中国人民大学，任教授、博导。
-    
+
+### 浙江大学
++ [赵洲](https://person.zju.edu.cn/zhaozhou/699414.html) — 多模态学习 & NLP & CV
+
 ### 华南理工
-+ 吕建明
++ [吕建明](https://so-link.org/) — 多模态学习
 
