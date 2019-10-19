@@ -14,6 +14,7 @@
 ### 中科院
 + [郭嘉丰](http://www.bigdatalab.ac.cn/~gjf/) — 语义匹配 & 机器阅读理解
 + [范意兴](https://xs.glgoo.99lb.net/citations?hl=zh-CN&user=w5kGcUsAAAAJ) — 语义匹配
++ [刘康](http://www.nlpr.ia.ac.cn/cip/~liukang/index.html) — 知识图谱 & NLP
 
 ### 人民大学
 + [文继荣](http://info.ruc.edu.cn/academic_professor.php?teacher_id=64)，千人计划学者 — 信息检索
