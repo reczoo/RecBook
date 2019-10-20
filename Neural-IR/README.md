@@ -15,6 +15,7 @@ A curated list of awesome resources on neural information retrieval
 
 ### Clickthrough Data
 + [**SIGIR'09**] [Smoothing Clickthrough Data for Web Search Ranking](https://www.microsoft.com/en-us/research/publication/smoothing-clickthrough-data-for-web-search-ranking/), by Jianfeng Gao Wei Yuan Xiao Li Kefeng Deng Jian-Yun Nie.
++ [**SIGIR'08**] [Learning Query Intent from Regularized Click Graphs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.159.3820&rep=rep1&type=pdf), by Xiao Li, Ye-Yi Wang, Alex Acero. [**Microsoft**]
 + [**CIKM'08**] [How Does Clickthrough Data Reflect Retrieval Quality?](https://www.cs.cornell.edu/people/tj/publications/radlinski_etal_08b.pdf), by Filip Radlinski, Madhu Kurup, Thorsten Joachims.
 + [**SIGIR'05**] [Accurately Interpreting Clickthrough Data as Implicit Feedback](https://www.cs.cornell.edu/people/tj/publications/joachims_etal_05a.pdf), by Thorsten Joachims, Laura Granka, Bing Pan, Helene Hembrooke, Geri Gay.
 + [**Journal'03**] [Evaluating Retrieval Performance using Clickthrough Data](https://www.cs.cornell.edu/people/tj/publications/joachims_02b.pdf), by Thorsten Joachims.
