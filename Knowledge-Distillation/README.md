@@ -2,9 +2,9 @@
 
 ### Understanding KD
 1. [**ICML'19**] [Towards Understanding Knowledge Distillation](http://proceedings.mlr.press/v97/phuong19a.html), by Mary Phuong, Christoph Lampert. 
-
-1. [**Arxiv'18**] [Training Deep Neural Networks in Generations: A More Tolerant Teacher Educates Better Students
-](https://arxiv.org/abs/1805.05551), by Chenglin Yang, Lingxi Xie, Siyuan Qiao, Alan Yuille.
+1. [**Arxiv'18**] [Training Deep Neural Networks in Generations: A More Tolerant Teacher Educates Better Students](https://arxiv.org/abs/1805.05551), by Chenglin Yang, Lingxi Xie, Siyuan Qiao, Alan Yuille.
+1. **[Arxiv'19]** On the Efficacy of Knowledge Distillation, by Jang Hyun Cho, Bharath Hariharan.
+1. **[Arixiv'19]** Distillation ≈ Early Stopping? Harvesting Dark Knowledge Utilizing Anisotropic Information Retrieval For Overparameterized Neural Network, by Bin Dong, Jikai Hou, Yiping Lu, Zhihua Zhang.
 
 ### Knowledge Type
 1. [**CVPR'19**] [Relational Knowledge Distillation](http://openaccess.thecvf.com/content_CVPR_2019/html/Park_Relational_Knowledge_Distillation_CVPR_2019_paper.html), by Wonpyo Park, Dongju Kim, Yan Lu, Minsu Cho.
@@ -16,6 +16,7 @@
 1. Graph Distillation for Action Detection with Privileged Modalities
 
 1. [**Arxiv'15**] [Distilling the Knowledge in a Neural Network](https://arxiv.org/pdf/1503.02531), by Geoffrey Hinton, Oriol Vinyals, Jeff Dean. 
+  
     > Hinton首先提出了Knowledge Distillation (KD)的概念，通过teacher-student架构将复杂网络的知识transfer到简单sudent网络中，提升student的效果。与直接用teacher网络的output作为label学习不同，KD采用了一个temperature的技巧，将softmax的输出进行了转化，能够提供更细节的label。但本质来说，KD利用的是label之间的相关性，相当于把原始one-hot的label变成了连续分布，这样student网络也能更好的学习。也是因为这样，KD在二分类的效果一般。同时，KD相当于对student加了一个regularizer，所以和dropout的效果会相互抵消。[[Read more...](https://www.zhihu.com/question/50519680)]
 
 ### Transfer Scheme
@@ -86,7 +87,7 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 
 ### Knowledge Amalgamation
 
-1.Knowledge Amalgamation from Heterogeneous Networks by Common Feature Learning
+1. Knowledge Amalgamation from Heterogeneous Networks by Common Feature Learning
 1. Customizing Student Networks From Heterogeneous Teachers via Adaptive Knowledge Amalgamation
 1. Student Becoming the Master: Knowledge Amalgamation for Joint Scene Parsing, Depth Estimation, and More
 1. Highlight Every Step: Knowledge Distillation via Collaborative Teaching
