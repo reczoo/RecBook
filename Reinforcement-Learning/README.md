@@ -7,6 +7,24 @@ A curated list of awesome deep reinforcement learning research in search and rec
 
 ### Papers
 
+1. [**AAAI'20**] [Deep Reinforcement Learning for Online Advertising in Recommender Systems](https://arxiv.org/abs/1909.03602), by Xiangyu Zhao, Changsheng Gu, Haoshenglun Zhang, Xiaobing Liu, Xiwang Yang, Jiliang Tang.
+
+1. [**AAAI'20**] [Simulating User Feedback for Reinforcement Learning Based Recommendations](https://arxiv.org/abs/1906.11462), by Xiangyu Zhao, Long Xia, Lixin Zou, Dawei Yin, Jiliang Tang. [**JD**]
+
+1. [**AAAI'20**] [Model-based Reinforcement Learning for Predictions and Control for Limit Order Books](https://arxiv.org/abs/1910.03743), by Haoran Wei, Yuanbo Wang, Lidia Mangu, Keith Decker. [**J.P. Morgan**]
+
+1. [**WSDM'20**] [Deep Reinforcement Learning for Whole-Chain Recommendations](https://arxiv.org/abs/1902.03987), by Xiangyu Zhao, Long Xia, Dawei Yin, Jiliang Tang. [**JD**]
+
+1. [**KDD'19**] [Off-policy Learning for Multiple Loggers](https://arxiv.org/abs/1907.09652), by Li He, Long Xia, Wei Zeng, Zhi-Ming Ma, Yihong Zhao, Dawei Yin. [**JD**]
+
+1. [**ACL'19**] [Neural Keyphrase Generation via Reinforcement Learning with Adaptive Rewards](https://arxiv.org/pdf/1906.04106.pdf), by Hou Pong Chan, Wang Chen, Lu Wang, Irwin King. 
+
+1. [**CIKM'19**] [Generative Question Refinement with Deep Reinforcement Learning in Retrieval-based QA System](https://arxiv.org/abs/1908.05604), by Ye Liu, Chenwei Zhang, Xiaohui Yan, Yi Chang, Philip S. Yu. [**Amazon, Huawei**]
+
+1. [**RecSys'19**] [PyRecGym: a Reinforcement Learning Gym for Recommender Systems](https://dl.acm.org/citation.cfm?id=3346981), by Bichen Shi, Makbule Gulcin Ozsoy, Neil Hurley, Barry Smyth, Elias Z. Tragos, James Geraci, Aonghus Lawlor. [**Samsung**]
+
+1. [**Arxiv'19**] [RecSim: A Configurable Simulation Platform for Recommender Systems](https://arxiv.org/abs/1909.04847), by Eugene Ie, Chih-wei Hsu, Martin Mladenov, Vihan Jain, Sanmit Narvekar, Jing Wang, Rui Wu, Craig Boutilier. [**Google**]
+
 1. [**CoRR'19**] [Reinforcement Learning to Optimize Long-term User Engagement in Recommender Systems](https://arxiv.org/abs/1902.05570), by Lixin Zou, Long Xia, Zhuoye Ding, Jiaxing Song, Weidong Liu, Dawei Yin. [**JD**]
 
 1. [**CoRR'19**] [Diversity-Promoting Deep Reinforcement Learning for Interactive Recommendation](https://arxiv.org/abs/1903.07826), by Yong Liu, Yinan Zhang, Qiong Wu, Chunyan Miao, Lizhen Cui, Binqiang Zhao, Yin Zhao, Lu Guan. [**Alibaba**]
@@ -36,6 +54,10 @@ A curated list of awesome deep reinforcement learning research in search and rec
 1. [**RecSys'18**] [Deep Reinforcement Learning for Page-wise Recommendations](https://arxiv.org/pdf/1805.02343.pdf), by Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, Jiliang Tang. [**JD**]
 
 1. [**ICDM'18**] [A Reinforcement Learning Framework for Explainable Recommendation](https://www.microsoft.com/en-us/research/uploads/prod/2018/08/main.pdf), by Xiting Wang, Yiru Chen, Jie Yang, Le Wu, Zhengtao Wu, Xing Xie. [**Microsoft**]
+
+1. [**EMNLP'18**] [Paraphrase Generation with Deep Reinforcement Learning](https://arxiv.org/abs/1711.00279), by Zichao Li, Xin Jiang, Lifeng Shang, Hang Li. [**Huawei**]
+
+1. [**Arxiv'18**] [Deep Reinforcement Learning based Recommendation with Explicit User-Item Interactions Modeling](https://arxiv.org/abs/1810.12027), by Feng Liu, Ruiming Tang, Xutao Li, Weinan Zhang, Yunming Ye, Haokun Chen, Huifeng Guo, Yuzhou Zhang. [**Huawei**]
 
 1. [**SIGIR'17**] [Reinforcement Learning to Rank with Markov Decision Process](http://www.bigdatalab.ac.cn/~junxu/publications/SIGIR2017_RL_L2R.pdf), by Zeng Wei, Jun Xu, Yanyan Lan, Jiafeng Guo, Xueqi Cheng.
 
