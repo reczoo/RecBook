@@ -9,7 +9,7 @@
 ### Knowledge Type
 1. [**CVPR'19**] [Relational Knowledge Distillation](http://openaccess.thecvf.com/content_CVPR_2019/html/Park_Relational_Knowledge_Distillation_CVPR_2019_paper.html), by Wonpyo Park, Dongju Kim, Yan Lu, Minsu Cho.
 
-1. Triplet Distillation for Deep Face Recognition
+1. **[Arxiv'19]** [Triplet Distillation for Deep Face Recognition](https://arxiv.org/pdf/1905.04457)
 
 1. Knowledge Representing: Efficient, Sparse Representation of Prior Knowledge for Knowledge Distillation
 
