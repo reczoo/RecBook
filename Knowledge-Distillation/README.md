@@ -9,6 +9,8 @@
 ### Knowledge Type
 1. [**CVPR'19**] [Relational Knowledge Distillation](http://openaccess.thecvf.com/content_CVPR_2019/html/Park_Relational_Knowledge_Distillation_CVPR_2019_paper.html), by Wonpyo Park, Dongju Kim, Yan Lu, Minsu Cho.
 
+    > 传统的KD都是teacher的output和student的output进行比较，使得两个点的距离越近越好。本文指出，在KD中用点与点之间的关系更能够表达知识，而不是仅仅使用一个样本点来表征teacher的知识。为了更好的表征知识，本文提出要拉近pair与pair之间（或者是triplet与triplet之间）的距离，而不是点与点的距离。作者提出了RKD，具体的实现是两个loss，一个distance loss可以用来对pair建模，一个angle loss可以用来对triplet建模。同时，作者还指出RKD loss要与传统的点对点loss一起使用效果更佳。
+
 1. **[Arxiv'19]** [Triplet Distillation for Deep Face Recognition](https://arxiv.org/pdf/1905.04457)
 
 1. Knowledge Representing: Efficient, Sparse Representation of Prior Knowledge for Knowledge Distillation
@@ -23,6 +25,8 @@
 1. [ICLR'19] Knowledge Flow: Improve Upon Your Teachers
 
 1. [**Arxiv'19**] [Improved Knowledge Distillation via Teacher Assistant: Bridging the Gap Between Student and Teacher](https://arxiv.org/abs/1902.03393), by Seyed-Iman Mirzadeh, Mehrdad Farajtabar, Ang Li, Hassan Ghasemzadeh. [**DeepMind**]
+
+   > 作者指出，在teacher和student的capacity差距（gap）比较大的时候，transfer的效果会比较差。这种时候需要引入一个中等size的TA，它的capacity介于teacher的student之间，来对这个gap进行衔接。也即从传统的T->S的KD变成了T->TA->S。
 
 1. [**ICLR'16**] [Net2Net: Accelerating Learning via Knowledge Transfer](https://arxiv.org/abs/1511.05641), by Tianqi Chen, Ian Goodfellow, Jonathon Shlens. [**Google**]
 
@@ -42,13 +46,17 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 
 1. [**ICML'18**] [Born Again Neural Networks](https://arxiv.org/pdf/1805.04770.pdf), by Tommaso Furlanello, Zachary C. Lipton, Michael Tschannen, Laurent Itti, Anima Anandkumar. [**Amazon**]
 
+   > 本文不将KD用于模型压缩，而是使得teacher和student的结构相同，通过训练一个序列的模型，每个时刻的模型都向上一个时刻的模型进行蒸馏。作者发现通过这样做，在不改变模型结构的情况下，能够显著的提升模型的性能。同时，作者发现KD引入的梯度可以分解为两部分，一部分是dark knowledge term，包含了对非groundtruth的label的比较的信息；另一部分是对true label的一个rescaling，相当于teacher通过判断true label的confidence，对true label进行一个加权。
+
 1. Snapshot Distillation: Teacher-Student Optimization in One Generation
 
 ### Data Distillation
 
 1. [**Arxiv'18**] [Dataset Distillation](https://arxiv.org/abs/1811.10959), by Tongzhou Wang, Jun-Yan Zhu, Antonio Torralba, Alexei A. Efros. [**Facebook**]
 
-1. Data Distillation: Towards Omni-Supervised Learning
+1. [**CVPR'18**] [Data Distillation: Towards Omni-Supervised Learning](https://arxiv.org/pdf/1712.04440.pdf ) **[Facebook]**
+
+   > 传统的半监督学习理论上最多只能达到全监督的效果，也即fully-supervised是一个上界，为了追求更高的性能，本文提出的方法，可以作为fully-supervised的下界，即可能达到比fully-supervised更好的效果。文中提出的方法需要labeled data和大量的un-labeled data，通过用labeled data先训练一个模型，然后用这个训练好的模型去预测un-labeled data以得到generated label，最后用labeled data + generated label data一起去训练模型以得到更好的效果。本文的主要创新在于如何得到generated label，如果是直接预测，作者认为可能无法包含有意义的信息，因此，作者在得到generated label前，将un labeled data进行了transform（rescaling，crops等等），然后再ensemble，作为某个样本的generated label。例如，样本A被transform成了A+, A-, A\*，最后A的generated label就是ensemble(T(A+), T(A-), T(A\*))。
 
 ### Data-free Distillation
 
@@ -56,12 +64,17 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 
 1. [**ICCV'19**] [DAFL: Data-Free Learning of Student Networks](https://arxiv.org/abs/1904.01186), by Hanting Chen, Yunhe Wang, Chang Xu, Zhaohui Yang, Chuanjian Liu, Boxin Shi, Chunjing Xu, Chao Xu, Qi Tian. [**Huawei**]
 
+   > 本文希望解决因为隐私或安全问题无法获取原始数据下的蒸馏，在仅有trained teacher，而不得到用于训练teacher的数据的情况下，训练逼近teacher的student。  具体地，本文用GAN的思路，将训练好的teacher作为discriminator，训练一个generator。在得到generator之后，用generator生成虚拟的数据，然后用这些数据进行蒸馏。
+
 1. [**NeurIPS'17** workshop] [Data-Free Knowledge Distillation for Deep Neural Networks](https://arxiv.org/abs/1710.07535), by Raphael Gontijo Lopes, Stefano Fenu, Thad Starner.
 
 ### Online Distillation
 
 1. Large scale distributed neural network training through online distillation 【分布式在线蒸馏】
-1. Online Distilling from Checkpoints for Neural Machine Translation 【在线蒸馏】
+
+1. **[NAACL'19]** [Online Distilling from Checkpoints for Neural Machine Translation](https://www.aclweb.org/anthology/N19-1192.pdf) 【在线蒸馏】
+
+    > 目前训练deep model的方法都是offline learning，即用一个dev set来验证训练的效果是否好，并且在表现好的地方存checkpoint，最后再ensemble这些checkpoint，以达到更好的表现。这样做有一个缺点，即在训练的过程中，后期的ensemble不会影响到training process，因此模型的性能就被原始的training process限制住了。作者提出了使用online的方法来影响这个training process，即在存checkpoint的时候，就把这个checkpoint当做teacher，下一步训练就同时向这个checkpoint和原始label学习。
 
 1. Temporal Ensembling for Semi-Supervised Learning
 
@@ -72,13 +85,23 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 1. [**KDD'17**] [Learning from Multiple Teacher Networks](https://www.kdd.org/kdd2017/papers/view/learning-from-multiple-teacher-networks), by Shan You, Chang Xu, Chao Xu, Dacheng Tao
 
 1. Knowledge Distillation by On-the-Fly Native Ensemble
+
 1. [**ICLR'19**] [Multilingual Neural Machine Translation with Knowledge Distillation](https://arxiv.org/abs/1902.10461), by Xu Tan, Yi Ren, Di He, Tao Qin, Zhou Zhao, Tie-Yan Liu. [**Microsoft**]
+
+   > 本文用KD来提升多语言翻译模型的准确性。多语言翻译模型通常是一个模型拥有翻译多pair语言的能力，作者发现一般情况下，针对同一pair语言，多语言翻译模型的效果不如单语言翻译模型。因此作者用单语言模型作为teacher，来针对性地教多语言模型的某个语言。可以理解为是一个多任务模型，每个任务都有一个老师来教。
+
 1. FEED: Feature-level Ensemble Effect for knowledge Distillation
+
 1. Distilled Person Re-identification: Towards a More Scalable System
+
 1. Unfolding and Shrinking Neural Machine Translation Ensembles
+
 1. EnsembleNet: End-to-End Optimization of Multi-headed Models
+
 1. Ensemble Distillation for Neural Machine Translation
+
 1. Efficient Knowledge Distillation from an Ensemble of Teachers
+
 1. [] Knowledge Distillation Across Ensembles of Multilingual Models for Low-resource Languages
 
 1. [] Distilling Knowledge from Ensembles of Neural Networks for Speech Recognition
@@ -87,13 +110,23 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 
 ### Knowledge Amalgamation
 
-1. Knowledge Amalgamation from Heterogeneous Networks by Common Feature Learning
+1. **[IJCAI 2019]** [Knowledge Amalgamation from Heterogeneous Networks by Common Feature Learning](https://arxiv.org/PDF/1906.10546)
+
+   > 很多研究者都会将自己在不同dataset上训练的模型公布，因此目前我们很容易得到很多异构的模型，作者提出通过knowledge amalgamation来聚合这些模型，以得到一个更小的，multi-talented的模型。具体地，作者先将不同teacher的最后一层取出来，与student的特征一起，映射到同一个向量空间，在这个向量空间缩小student与teacher的距离。特别地，作者还加了一个辅助loss，保证映射后的向量与映射前的向量之间能够reconstruction。
+
 1. Customizing Student Networks From Heterogeneous Teachers via Adaptive Knowledge Amalgamation
+
 1. Student Becoming the Master: Knowledge Amalgamation for Joint Scene Parsing, Depth Estimation, and More
+
 1. Highlight Every Step: Knowledge Distillation via Collaborative Teaching
+
 1. Amalgamating Filtered Knowledge: Learning Task-customized Student from Multi-task Teachers
+
 1. Amalgamating knowledge towards comprehensive classification
-1. Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN
+
+1. **[Arxiv'17]** [Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN](https://arxiv.org/pdf/1711.07607.pdf) **[Google]**
+
+   > 对于图像分类问题，我们需要一个能够细粒度分类的模型，比如一个模型能够辨别100K个类别。通常的做法都是对某一个类别训练一个专家，但是这样做会导致极大的复杂性和高昂的inference时间。因此，作者通过使用KD来学一个能够handle大量类别（100K）的单一模型。此外，作者还提出了self-paced learning mechanism来自动的适应对不同teacher学习的程度；也提出了structurally connected layers，来避免最后一个输出层的参数太多（因为分类的数目很多）。
 
 ### Applications
 + **RL**
