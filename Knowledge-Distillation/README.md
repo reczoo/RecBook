@@ -79,8 +79,10 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 1. Temporal Ensembling for Semi-Supervised Learning
 
 1. [**AAAI'18**] [Rocket Launching: A Universal and Efficient Framework for Training Well-performing Light Net](https://arxiv.org/pdf/1708.04106), by Guorui Zhou, Ying Fan, Runpeng Cui, Weijie Bian, Xiaoqiang Zhu, Kun Gai. [**Alibaba**]
+    
     > 该框架Rocket Launching借鉴Teacher-Student网络架构，设计了一个复杂的booster和一个简单的rocket net，复杂网络准确度高但速度慢，简单网络速度快但学习能力有限。本文以复杂网络为teacher来教student网络的学习，构建了cross-encropy和hint loss两个损失函数，最后联合优化。 与传统teacher-student网络的学习不同，本文的training是同时更新teacher和student，保证student在学习路径上也保持与teacher一致。但是反向传播使用了gradient block，也就是hint loss只对student起作用，但是不要影响teacher本身的学习。这点与cross-view training一致。
     
+1. Knowledge Distillation by On-the-Fly Native Ensemble
 ### Ensemble Distillation
 1. [**KDD'17**] [Learning from Multiple Teacher Networks](https://www.kdd.org/kdd2017/papers/view/learning-from-multiple-teacher-networks), by Shan You, Chang Xu, Chao Xu, Dacheng Tao
 
@@ -94,7 +96,9 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 
 1. Distilled Person Re-identification: Towards a More Scalable System
 
-1. Unfolding and Shrinking Neural Machine Translation Ensembles
+1. ~~Unfolding and Shrinking Neural Machine Translation Ensembles~~
+
+   > 本文提出了通过unfolding和shrinking来简化一个ensemble模型。以两个模型的ensemble为例，unfolding可以理解为两个模型共享同一个输入层，并且将隐藏层拼在一起，将两个小模型变成了一个大模型。这样做的好处是forward的时候将两次小矩阵乘法变成了一个大矩阵乘法，这样能充分发挥GPU的作用。另一个步骤是shrinking，即将网络中冗余的节点进行剪枝。
 
 1. EnsembleNet: End-to-End Optimization of Multi-headed Models
 
@@ -133,8 +137,9 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 1. [**AISTATS'19**] [Distilling Policy Distillation](https://arxiv.org/pdf/1902.02186.pdf), by Wojciech Marian Czarnecki, Razvan Pascanu, Simon Osindero, Siddhant M. Jayakumar, Grzegorz Swirszcz, Max Jaderberg. [**DeepMind**]
 
 + **Learning from Noisy Labels**
-1. Learning from Noisy Labels with Distillation
-Co-teaching: Robust training of deep neural networks with extremely noisy labels
+1. **[NeurIPS'18]** [Learning from Noisy Labels with Distillation Co-teaching: Robust training of deep neural networks with extremely noisy labels](https://arxiv.org/abs/1804.06872)
+
+  > 本文使用两个网络交替学习的方法来解决数据集中噪声较多的问题。深度网络拥有记忆数据的能力，通常在刚开始的几个epoch能够记忆非噪声的数据，随着训练的加深，在后期会记忆噪声。基于这个假设，作者用两个网络A,B来进行co-training，给一个batch，分别feed给A和B，这样就可以让A,B分别判断这个batch中每个样本的loss，根据loss进行排序，根据一个动态比例R筛选出loss最小的一部分样本。用A筛后，剩下的样本feed给B进行训练，B筛后的样本用于给A进行训练。比例R是动态的,在训练开始前的几个epoch较大,后期较小,因为网络更有可能在后期记忆噪声.
 
 + **Model Unification**
 1. Unifying Heterogeneous Classifiers with Distillation
@@ -142,8 +147,13 @@ Co-teaching: Robust training of deep neural networks with extremely noisy labels
 
 + **Privileged Information**
 1. [**ICLR'16**] [Unifying Distillation and Privileged Information](https://arxiv.org/pdf/1511.03643.pdf), by David Lopez-Paz, Léon Bottou, Bernhard Schölkopf, Vladimir Vapnik. 
-1. Privileged Features Distillation for E-Commerce Recommendations
-1. Learning with Pprivileged Information via Adversarial Discriminative Modality Distillation
+
+1. **[Arxiv'19]** Privileged Features Distillation for E-Commerce Recommendations **[Alibaba]**
+
+   > 在CTR预估场景中，privileged feature是只能在训练的时候获得，inference的时候无法获得的特征，比如dwell time，只有在用户点击之后才能得到。通常为了保证训练和inference时候的特征是对齐的，往往在训练的时候不使用privileged feature，但是这些feature的信息量是很大的，因此本文使用KD将privileged feature引入到inference阶段。具体地，在训练teacher的时候加入privileged feature，student则使用常规的feature，最后inference的时候只使用student model。这样做的好处在于student并没有引入更多的特征，但是在训练的时候就已经学到了privileged feature的信息。
+
+1. Learning with Privileged Information via Adversarial Discriminative Modality Distillation
+
 1. Learning to Rank Using Privileged Information
 
 + **Recommendation**
