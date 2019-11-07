@@ -15,14 +15,19 @@
 
 1. Knowledge Representing: Efficient, Sparse Representation of Prior Knowledge for Knowledge Distillation
 
-1. Graph Distillation for Action Detection with Privileged Modalities
+1. [ECCV'18] [Graph Distillation for Action Detection with Privileged Modalities](https://arxiv.org/pdf/1712.00108) **[Google, Li Feifei]**
 
 1. [**Arxiv'15**] [Distilling the Knowledge in a Neural Network](https://arxiv.org/pdf/1503.02531), by Geoffrey Hinton, Oriol Vinyals, Jeff Dean. 
   
     > Hinton首先提出了Knowledge Distillation (KD)的概念，通过teacher-student架构将复杂网络的知识transfer到简单sudent网络中，提升student的效果。与直接用teacher网络的output作为label学习不同，KD采用了一个temperature的技巧，将softmax的输出进行了转化，能够提供更细节的label。但本质来说，KD利用的是label之间的相关性，相当于把原始one-hot的label变成了连续分布，这样student网络也能更好的学习。也是因为这样，KD在二分类的效果一般。同时，KD相当于对student加了一个regularizer，所以和dropout的效果会相互抵消。[[Read more...](https://www.zhihu.com/question/50519680)]
+    >
+    
+1. **[Arxiv'19]** [Knowledge Distillation from Internal Representations](https://arxiv.org/pdf/1910.03723) **[Amazon]**
+
+    > 本文是针对BERT的distillation，目的是将BERT-base压缩成原层数的1/2。传统的KD只是通过label来在两个网络之间传递知识，本文额外地使用了内部的attention矩阵，使得两个网络的attention矩阵的KL散度最小。另外，由于BERT是一个多层结构，作者也提出了一个progressively的训练方式，在训练的过程中，先约束前面几层，随着训练的进行，逐渐开始约束后面几层。这样做的好处是使得模型模仿的难度减小。
 
 ### Transfer Scheme
-1. [ICLR'19] Knowledge Flow: Improve Upon Your Teachers
+1. **[ICLR'19]** [Knowledge Flow: Improve Upon Your Teachers](https://arxiv.org/pdf/1904.05878.pdf)
 
 1. [**Arxiv'19**] [Improved Knowledge Distillation via Teacher Assistant: Bridging the Gap Between Student and Teacher](https://arxiv.org/abs/1902.03393), by Seyed-Iman Mirzadeh, Mehrdad Farajtabar, Ang Li, Hassan Ghasemzadeh. [**DeepMind**]
 
@@ -79,7 +84,7 @@ MEAL: Multi-Model Ensemble via Adversarial Learning
 1. Temporal Ensembling for Semi-Supervised Learning
 
 1. [**AAAI'18**] [Rocket Launching: A Universal and Efficient Framework for Training Well-performing Light Net](https://arxiv.org/pdf/1708.04106), by Guorui Zhou, Ying Fan, Runpeng Cui, Weijie Bian, Xiaoqiang Zhu, Kun Gai. [**Alibaba**]
-    
+  
     > 该框架Rocket Launching借鉴Teacher-Student网络架构，设计了一个复杂的booster和一个简单的rocket net，复杂网络准确度高但速度慢，简单网络速度快但学习能力有限。本文以复杂网络为teacher来教student网络的学习，构建了cross-encropy和hint loss两个损失函数，最后联合优化。 与传统teacher-student网络的学习不同，本文的training是同时更新teacher和student，保证student在学习路径上也保持与teacher一致。但是反向传播使用了gradient block，也就是hint loss只对student起作用，但是不要影响teacher本身的学习。这点与cross-view training一致。
     
 1. Knowledge Distillation by On-the-Fly Native Ensemble
