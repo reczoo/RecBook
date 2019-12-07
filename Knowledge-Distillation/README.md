@@ -11,6 +11,10 @@
 
     > 传统的KD都是teacher的output和student的output进行比较，使得两个点的距离越近越好。本文指出，在KD中用点与点之间的关系更能够表达知识，而不是仅仅使用一个样本点来表征teacher的知识。为了更好的表征知识，本文提出要拉近pair与pair之间（或者是triplet与triplet之间）的距离，而不是点与点的距离。作者提出了RKD，具体的实现是两个loss，一个distance loss可以用来对pair建模，一个angle loss可以用来对triplet建模。同时，作者还指出RKD loss要与传统的点对点loss一起使用效果更佳。
 
+1. **[CVPR’19]** [Knowledge Distillation via Instance Relationship Graph](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liu_Knowledge_Distillation_via_Instance_Relationship_Graph_CVPR_2019_paper.pdf)
+
+    >和Relational Knowledge Distillation这篇类似，将多个sample建图，在逼近的时候不是考虑某一个孤立的点，而是考虑图与图之间的距离。# details TBD
+
 1. **[Arxiv'19]** [Triplet Distillation for Deep Face Recognition](https://arxiv.org/pdf/1905.04457)
 
 1. Knowledge Representing: Efficient, Sparse Representation of Prior Knowledge for Knowledge Distillation
