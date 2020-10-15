@@ -93,8 +93,8 @@
 ### Multimodal Recommendation
 1. Hierarchical Fashion Graph Network for Personalised Outfit Recommendation
 1. Nonintrusive-Sensing and Reinforcement-Learning Based Adaptive Personalized Music Recommendation
-1. [SIGIR'20] Fashion Compatibility Modeling through a Multi-modal Try-on-guided Scheme
-1. [SIGIR'20] Recommending Podcasts for Cold-Start Users Based on Music Listening and Taste
+1. Fashion Compatibility Modeling through a Multi-modal Try-on-guided Scheme
+1. Recommending Podcasts for Cold-Start Users Based on Music Listening and Taste
 
 ### Text-based Recommendation
 1. Neural Unified Review Recommendation with Cross Attention
@@ -108,7 +108,7 @@
 1. Content-aware Neural Hashing for Cold-start Recommendation
 1. Recommendation for New Users and New Items via Randomized Training and Mixture-of-Experts Transformation
 1. DCDIR: A Deep Cross-Domain Recommendation System for Cold Start Users in Insurance Domain
-1. [SIGIR'20] AR-CF: Augmenting Virtual Users and Items in Collaborative Filtering for Addressing Cold-Start Problems
+1. AR-CF: Augmenting Virtual Users and Items in Collaborative Filtering for Addressing Cold-Start Problems
 
 
 ### Debiasing
