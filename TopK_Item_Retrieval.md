@@ -30,7 +30,7 @@ A curated list of awesome papers on recommender systems
 
 1. [**NeurIPS'19**] [Joint Optimization of Tree-based Index and Deep Model for Recommender Systems](https://arxiv.org/abs/1902.07565), by Han Zhu, Daqing Chang, Ziru Xu, Pengye Zhang, Xiang Li, Jie He, Han Li, Jian Xu, Kun Gai. [**Alibaba**]
 
-1. [**WSDM'19** Talk] [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/#section-invitedtalk), by Yiwei Song. [**Amazon**]
+1. [**WSDM'19** Talk] [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf), by Yiwei Song. [**Amazon**]
     > 该talk讲述了如何利用semantic matching做语义召回，即根据query vector匹配最相邻的product vector，这样原有文本索引队列上加入语义召回队列，进而提升产品搜索。值得参考的点：1. 将doc划分点击、曝光、随机三种，利用分段式的loss函数来确保点击的query-doc pair相似度> 0.9, 随机的query-doc < 0.2, 曝光未点击的 < 0.55。这种pointwise学embedding的方式第一次见，值得借鉴，也需要与word2vec中的方式做比较。2. 分词上采用unigram, 2gram, 3gram, tri-letters多级融合的方式，并在大数据训练集上有较明显效果。3. 另外如何做快速的ANN向量查询也是一个工程化问题
 
 1. [**WWW'18**] [Beyond Keywords and Relevance: A Personalized Ad Retrieval Framework in E-Commerce Sponsored Search](https://arxiv.org/abs/1712.10110), by Su Yan, Wei Lin, Tianshu Wu, Daorui Xiao, Xu Zheng, Bo Wu, Kaipeng Liu. [**Alibaba**]
