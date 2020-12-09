@@ -2,21 +2,19 @@
 
 ## Industry
 ### Google
-+ [Ed H. Chi](https://research.google/people/EdChi/), PhD, University of Minnesota
-  > Ed H. Chi is a Principal Scientist at Google, leading several machine learning research teams focusing on neural modeling, inclusive ML, reinforcement learning, and recommendation systems in Google Brain team. He has delivered significant improvements for YouTube, News, Ads, Google Play Store at Google with >230 product launches in the last 6 years. With 39 patents and over 120 research articles, he is also known for research on user behavior in web and social media.
++ [Ed H. Chi](https://research.google/people/EdChi/)
+  <details>Ed H. Chi is a Principal Scientist at Google, leading several machine learning research teams focusing on neural modeling, inclusive ML, reinforcement learning, and recommendation systems in Google Brain team. He has delivered significant improvements for YouTube, News, Ads, Google Play Store at Google with >230 product launches in the last 6 years. With 39 patents and over 120 research articles, he is also known for research on user behavior in web and social media.</details>
 
-+ [Ruoxi Wang](http://ruoxiw.com/), PhD, Stanford
-  > Ruoxi Wang is the author of the well-known DCN model. She is currently a software engineer at Google Brain. She received my Ph.D. from ICME, Stanford University, advised by Eric Darve. She has a strong interest in deep learning and has worked on neural network models for Ads predictions.
++ [Ruoxi Wang](http://ruoxiw.com/)
+  <details>Ruoxi Wang is the author of the well-known DCN model. She is currently a software engineer at Google Brain. She received my Ph.D. from ICME, Stanford University, advised by Eric Darve. She has a strong interest in deep learning and has worked on neural network models for Ads predictions.</details>
   
   
 ### 阿里巴巴
-+ [Kun Gai](https://scholar.google.com/citations?user=PXO4ygEAAAAJ&hl=zh-CN), PhD, Tsinghua
-  > Senior Director & Researcher, Alibaba Group
++ [Kun Gai](https://scholar.google.com/citations?user=PXO4ygEAAAAJ&hl=zh-CN), Senior Director & Researcher, Alibaba Group
+   <details>PhD, Tsinghua</details>
 
-+ [Hongbo Deng](https://sites.google.com/view/hongbodeng), PhD, CUHK
-  > I am with Alibaba Group, leading a R&D team to develop and apply advanced algorithms on search and recommendation for e-commerce business. Before that, I was a Senior Software Engineer at Google working on search quality and intelligence for Google Apps, and a Senior Research Scientist at Yahoo! Labs/Research, leading and managing the query understanding science team for Yahoo search. I also worked at UIUC as a Research Scientist with Prof. Jiawei Han, and did a lot of research on text mining and heterogeneous network. Prior to that, I obtained my Ph.D. from Department of Computer Science and Engineering at The Chinese University of Hong Kong. My dissertation was on information retrieval, data mining, and machine learning techniques for query log analysis and expertise retrieval, advised by Prof. Michael Lyu and Prof. Irwin King.
-
-+ []()
++ [Hongbo Deng](https://sites.google.com/view/hongbodeng)
+   <details>I am with Alibaba Group, leading a R&D team to develop and apply advanced algorithms on search and recommendation for e-commerce business. Before that, I was a Senior Software Engineer at Google working on search quality and intelligence for Google Apps, and a Senior Research Scientist at Yahoo! Labs/Research, leading and managing the query understanding science team for Yahoo search. I also worked at UIUC as a Research Scientist with Prof. Jiawei Han, and did a lot of research on text mining and heterogeneous network. Prior to that, I obtained my Ph.D. from Department of Computer Science and Engineering at The Chinese University of Hong Kong. My dissertation was on information retrieval, data mining, and machine learning techniques for query log analysis and expertise retrieval, advised by Prof. Michael Lyu and Prof. Irwin King.</details>
 
 
 ### 腾讯
@@ -49,20 +47,14 @@
 
 ### 人民大学
 + [文继荣](http://info.ruc.edu.cn/academic_professor.php?teacher_id=64)，千人计划学者 — 信息检索
-<details>
- <summary>:point_down: Click to expand</summary>
-   > 中国人民大学信息学院院长，高瓴人工智能学院执行院长，大数据管理与分析方法研究北京市重点实验室主任。1994 年和 1996 年于中国人民大学分别获得学士和硕士学位， 1999 年于中科院计算所获得博士学位，同年加入微软亚洲研究院，曾担任高级研究员和互联网搜索与挖掘组主任。2013 年入选第九批国家“千人计划”到中国人民大学工作。长期从事大数据分析和挖掘、信息检索、机器学习等领域的研究，至今已在国际著名学术会议和期刊上发表论文 200余篇，被同行引用总计 12000 多次。担任本领域权威国际期刊 ACM TOIS 和 IEEE TKDE 编委、国际会议 AIRS 2016 大会名誉主席、CCIR 2017 大会主席、SIGIR 2018 领域主席、SIGIR 2020程序委员会主席等。注重产学研一体化和科研成果的转化，获得50多项美国专利，其中一些成果已经被用于重要的产品中(如微软搜索引擎 Bing)。2018 年入选首批“北京高校卓越青年科学家”，北京市第十三届政协委员。
-</details>
-
-
-   
+    <details>中国人民大学信息学院院长，高瓴人工智能学院执行院长，大数据管理与分析方法研究北京市重点实验室主任。1994 年和 1996 年于中国人民大学分别获得学士和硕士学位， 1999 年于中科院计算所获得博士学位，同年加入微软亚洲研究院，曾担任高级研究员和互联网搜索与挖掘组主任。2013 年入选第九批国家“千人计划”到中国人民大学工作。长期从事大数据分析和挖掘、信息检索、机器学习等领域的研究，至今已在国际著名学术会议和期刊上发表论文 200余篇，被同行引用总计 12000 多次。担任本领域权威国际期刊 ACM TOIS 和 IEEE TKDE 编委、国际会议 AIRS 2016 大会名誉主席、CCIR 2017 大会主席、SIGIR 2018 领域主席、SIGIR 2020程序委员会主席等。注重产学研一体化和科研成果的转化，获得50多项美国专利，其中一些成果已经被用于重要的产品中(如微软搜索引擎 Bing)。2018 年入选首批“北京高校卓越青年科学家”，北京市第十三届政协委员。</details>
 
 + [窦志成](http://playbigdata.ruc.edu.cn/dou/) — 信息检索
-    > 窦志成，于2003年和2008年分别获得南开大学学士和博士学位。毕业后加入微软亚洲研究院，任研究员。2014年9月份加入中国人民大学，任特别研究员，2018年8月破格晋升教授。主要研究兴趣为信息检索、数据挖掘，信息抽取以及机器学习，重点研究基于深度学习的检索排序和NLP算法。已在国际知名会议和学术期刊上（如SIGIR、WWW、CIKM、WSDM、EMNLP及IEEE TKDE等）发表论文30余篇。担任过多个国际学术会议（如SIGIR、WWW、KDD、WSDM、CIKM）的程序委员会成员，是亚洲信息检索协会筹划指导委员会主席。
-除研究工作外，还乐于将研究想法实现成可运行的系统。 在亚洲研究院任职期间，参与了多个项目的开发， 如WebStudio、 ProjectQ、 和 WebSensor等。 他拥有多项专利，参与研发的多项技术已经成功转化到微软产品中（如必应搜索Bing和Office）。
+    <details>窦志成，于2003年和2008年分别获得南开大学学士和博士学位。毕业后加入微软亚洲研究院，任研究员。2014年9月份加入中国人民大学，任特别研究员，2018年8月破格晋升教授。主要研究兴趣为信息检索、数据挖掘，信息抽取以及机器学习，重点研究基于深度学习的检索排序和NLP算法。已在国际知名会议和学术期刊上（如SIGIR、WWW、CIKM、WSDM、EMNLP及IEEE TKDE等）发表论文30余篇。担任过多个国际学术会议（如SIGIR、WWW、KDD、WSDM、CIKM）的程序委员会成员，是亚洲信息检索协会筹划指导委员会主席。
+除研究工作外，还乐于将研究想法实现成可运行的系统。 在亚洲研究院任职期间，参与了多个项目的开发， 如WebStudio、 ProjectQ、 和 WebSensor等。 他拥有多项专利，参与研发的多项技术已经成功转化到微软产品中（如必应搜索Bing和Office）。</details>
 
 + [徐君](http://info.ruc.edu.cn/academic_professor.php?teacher_id=169) — 信息检索
-    > 徐君分别于2001年和2006年获得南开大学学士学位和博士学位。毕业后先后就职于微软亚洲研究院、华为诺亚方舟实验室和中科院计算所，于2018年9月加入中国人民大学，任教授、博导。
+    <details>徐君分别于2001年和2006年获得南开大学学士学位和博士学位。毕业后先后就职于微软亚洲研究院、华为诺亚方舟实验室和中科院计算所，于2018年9月加入中国人民大学，任教授、博导。</details>
 
 ### 浙江大学
 + [赵洲](https://person.zju.edu.cn/zhaozhou/699414.html) — 多模态学习 & NLP & CV
