@@ -1,17 +1,9 @@
-# Recommender Systems
-A curated list of awesome papers on recommender systems
+# TopK Candidate Item Retrieval
 
-+ [Surveys and Tutorials](#Surveys-and-Tutorials)
 + [Collaborative Filtering](#Collaborative-Filtering)
-+ [TopK Item Retrieval](#TopK-Item-Retrieval)
++ [Two-Tower Networks](#TopK-Item-Retrieval)
 + [Sequential Recommendation](#Sequential-Recommendation)
-+ [News Recommendation](#News-Recommendation)
-+ [Cross-Domain Recommendation](#Cross-Domain-Recommendation)
-+ [Interactive Recommendation](#Interactive-Recommendation)
-+ [Explainable Recommendation](#Explainable-Recommendation)
-
-### Surveys and Tutorials
-+ [**CSUR'19**] [Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf), by Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay.
++ [Graph-based Recommendation]
 
 ### Collaborative Filtering
 
