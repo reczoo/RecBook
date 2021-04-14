@@ -56,8 +56,8 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 ## Behaviour Sequence Modeling
 
-+ [DMR][**Alibaba**] Deep Match to Rank Model for Personalized Click-Through Rate Prediction](https://ojs.aaai.org//index.php/AAAI/article/view/5346), by Ze Lyu, Yu Dong, Chengfu Huo, Weijun Ren. *AAAI 2020*.
-> 本位主要考虑了behavior sequence的用法，传统有两种：1. 纯self-attention聚合 2. 利用DIN根据target item聚合。本文正好结合了这两种分别叫做user-to-item network和item-to-item network。另外在学user-to-item时，最后使用aggregated user representation和target embeddding做inner product作为relevance，相当于一个matching网络，所以加入了一个matching的auxiliary loss辅助训练。数据使用了Taobao的点击数据，这组数据可以复现。
++ [**DMR**][**Alibaba**] Deep Match to Rank Model for Personalized Click-Through Rate Prediction](https://ojs.aaai.org//index.php/AAAI/article/view/5346), by Ze Lyu, Yu Dong, Chengfu Huo, Weijun Ren. *AAAI 2020*.
+  > 本位主要考虑了behavior sequence的用法，传统有两种：1. 纯self-attention聚合 2. 利用DIN根据target item聚合。本文正好结合了这两种分别叫做user-to-item network和item-to-item network。另外在学user-to-item时，最后使用aggregated user representation和target embeddding做inner product作为relevance，相当于一个matching网络，所以加入了一个matching的auxiliary loss辅助训练。数据使用了Taobao的点击数据，这组数据可以复现。
 
 + :star: [**SIM**][**Alibaba**] [Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction](https://arxiv.org/abs/2006.05639), by Pi Qi, Xiaoqiang Zhu, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Kun Gai. *CIKM 2020*.
   > 本文是阿里妈妈在用户兴趣建模的新作，之前的DIN和DIEN都只能建模用户短期兴趣(比如200个点击序列)，本文考虑使用更长的用户序列建模长期兴趣(比如180天)，提出了两种item搜索策略，包含soft-search和hard-search，soft-search利用dot values取topk，需要LSH技术支持；hard-search直接取与目标ad相同category的items。soft-search与hard-search相比，准确度更高但系统实现更负杂。最后线上使用的是hard-search，得到的sub-sequence再输入DIN/DIEN进行用户兴趣学习。此外，在DIN模型输入时，同时考虑了长期sequence（180天）和短期sequence(最近两周)，离线AUC提升1个百分点，CTR提升7.1%。
