@@ -3,7 +3,7 @@
 A list of industrial papers on CTR/CVR prediction for online advertising, recommendation, and sponsored search.
 
 + [Feature Interactions](#Feature-Interactions)
-+ [Behavior Sequence Modeling](#Behavior-Sequence-Modeling)
++ [Behaviour Sequence Modeling](#Behavior-Sequence-Modeling)
 
 ## Feature Interactions
 + :star: [**DCN_V2**][**Google**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. *Arixv 2020*.
@@ -12,7 +12,7 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
   > 本文借鉴了hierarchical attention network的思想，在field间和不同order间进行两层attentional aggregation，进行CTR预测。首先本文采用multi-head transformer计算1st-order feature X1，然后利用attentional aggregation聚合得到向量u1，然后利用u1与X1的hadmard product产生更高阶的特征，依次循环得到k阶特征。最后将所有u1, u2...uk进行attentional aggregation得到最终的向量，过MLP进行分类。
 
 + [**TFNet**][**Tencent**] [TFNet: Multi-Semantic Feature Interaction for CTR Prediction](https://arxiv.org/abs/2006.15939), by Shu Wu, Feng Yu, Xueli Yu, Qiang Liu, Liang Wang, Tieniu Tan, Jie Shao, Fan Huang. *SIGIR 2020*.
-> 本文是腾讯在App推荐场景的工作。针对inner produc交互层加入了一个operation tensor，即vi*vj变为vi*T*vj，其中T的size为dxmxd，代表m个semantic space。此外，T还引入gate机制将vi_vj pair的T动态调整，即vi*Tij*vj.
+  > 本文是腾讯在App推荐场景的工作。针对inner produc交互层加入了一个operation tensor，即vi*vj变为vi*T*vj，其中T的size为dxmxd，代表m个semantic space。此外，T还引入gate机制将vi_vj pair的T动态调整，即vi*Tij*vj.
 
 + [**FAT-DeepFFM**][**Sina Weibo**] [FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine](https://arxiv.org/abs/1905.06336), by Junlin Zhang, Tongwen Huang, Zhiqi Zhang. *ICDM 2019*.
 
