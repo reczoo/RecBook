@@ -52,6 +52,9 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 ## Behaviour Sequence Modeling
 
++ [**SIM | Alibaba**] [Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction](https://arxiv.org/abs/2006.05639), by Pi Qi, Xiaoqiang Zhu, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Kun Gai. *CIKM 2020*.
+> 本文是阿里妈妈在用户兴趣建模的新作，之前的DIN和DIEN都只能建模用户短期兴趣(比如200个点击序列)，本文考虑使用更长的用户序列建模长期兴趣(比如180天)，提出了两种item搜索策略，包含soft-search和hard-search，soft-search利用dot values取topk，需要LSH技术支持；hard-search直接取与目标ad相同category的items。soft-search与hard-search相比，准确度更高但系统实现更负杂。最后线上使用的是hard-search，得到的sub-sequence再输入DIN/DIEN进行用户兴趣学习。此外，在DIN模型输入时，同时考虑了长期sequence（180天）和短期sequence(最近两周)，离线AUC提升1个百分点，CTR提升7.1%。
+
 + [**xx | Alibaba**] [Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction](https://arxiv.org/abs/1905.09248), by Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, Kun Gai. *KDD 2019*.
 
 + [**Alibaba**] [Deep Spatio-Temporal Neural Networks for Click-Through Rate Prediction](https://arxiv.org/abs/1906.03776), by Wentao Ouyang, Xiuwu Zhang, Li Li, Heng Zou, Xin Xing, Zhaojie Liu, Yanlong Du. *KDD 2019*.
