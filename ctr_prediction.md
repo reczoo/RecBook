@@ -3,9 +3,13 @@
 A list of industrial papers on CTR/CVR prediction for online advertising, recommendation, and sponsored search.
 
 + [Feature Interactions](#Feature-Interactions)
-+ [Behaviour Sequence Modeling](#Behavior-Sequence-Modeling)
++ [Behaviour Sequence Modeling](#Behaviour-Sequence-Modeling)
++ [Multi-Task Learning](#Multi-Task-Learning)
++ [Cross-Domain Recommendation](#Cross-Domain-Recommendation)
++ [AutoML](#AutoML)
 
-## Feature Interactions
+
+### Feature Interactions
 + :star: [**DCN_V2**][**Google**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. *Arixv 2020*.
 
 + [**InterHAt**][**NEC Labs**] [Interpretable Click-Through Rate Prediction through Hierarchical Attention](https://dl.acm.org/doi/10.1145/3336191.3371785), by Zeyu Li, Wei Cheng, Yang Che, Haifeng Che, Wei Wang. *WSDM 2020*.
@@ -54,7 +58,7 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
    > 本文是比较早做广告CTR预估的文章，采用最经典的LR模型来预测新广告的CTR。本文的CTR是统计意义上的点击率，并与query无关。模型利用了bid term CTR, related term CTR, ad quality, order相关的特征做线性回归，以cross-entropy loss作为regression模型预测CTR的概率。 在数值特征上，采用了x, log(1 + x), x^2的组合，以及对query frequency划分bin方式。实验表明，广告在100次以上view的情况下CTR的预估能逼近真实值。本文支出query相关的CTR预估是重要的方向。
   
 
-## Behaviour Sequence Modeling
+### Behaviour Sequence Modeling
 
 + [**DMR**][**Alibaba**] Deep Match to Rank Model for Personalized Click-Through Rate Prediction](https://ojs.aaai.org//index.php/AAAI/article/view/5346), by Ze Lyu, Yu Dong, Chengfu Huo, Weijun Ren. *AAAI 2020*.
   > 本位主要考虑了behavior sequence的用法，传统有两种：1. 纯self-attention聚合 2. 利用DIN根据target item聚合。本文正好结合了这两种分别叫做user-to-item network和item-to-item network。另外在学user-to-item时，最后使用aggregated user representation和target embeddding做inner product作为relevance，相当于一个matching网络，所以加入了一个matching的auxiliary loss辅助训练。数据使用了Taobao的点击数据，这组数据可以复现。
@@ -81,18 +85,34 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + :star: [**DIN**][**Alibaba**] [Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/pdf/1706.06978.pdf), by Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, Kun Gai. *KDD 2018*.
 
-## Multi-Scenarios & Cross-Domain
-+ [**MiNet**][**Alibaba**] [MiNet: Mixed Interest Network for Cross-Domain Click-Through Rate Prediction](https://arxiv.org/abs/2008.02974), by Wentao Ouyang, Xiuwu Zhang, Lei Zhao, Jinmei Luo, Yu Zhang, Heng Zou, Zhaojie Liu, Yanlong Du. *CIKM 2020*.
-  > 本文介绍阿里新闻广告CTR广告预估任务中利用用户在新闻内容的行为进行cross-domain学习，即主任务为广告CTR预估，辅助任务为新闻数据上的行为建模(双塔模型)，最后将学到的长期用户兴趣向量和短期新闻点击历史作为特征输入到主任务。效果在前一版模型DSTN上提升CTR 4%左右。
 
-## Multi-Tasks & Multi-Objectives
+### Multi-Task Learning
+
++ [**CoRR'19**] [Deep Bayesian Multi-Target Learning for Recommender Systems](https://arxiv.org/abs/1902.09154), by Qi Wang, Zhihui Ji, Huasheng Liu, Binqiang Zhao. [**Alibaba**]
+
++ [**KDD'19**] [Predicting Different Types of Conversions with Multi-Task Learning in Online Advertising](https://arxiv.org/abs/1907.10235), by Junwei Pan, Yizhi Mao, Alfonso Lobos Ruiz, Yu Sun, Aaron Flores. [**Verizon Media**, **Indeed**]
+
++ [**KDD'18**] [Perceive Your Users in Depth: Learning Universal User Representations from Multiple E-commerce Tasks](https://arxiv.org/abs/1805.10727), by Yabo Ni, Dan Ou, Shichen Liu, Xiang Li, Wenwu Ou, Anxiang Zeng, Luo Si. [**Alibaba**]
+
++ [**SIGIR'18**] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, Kun Gai. [Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate](https://arxiv.org/pdf/1804.07931), *SIGIR*, 2018. [**Alibaba**]
+   > 本文提出了基于multi-task learning的框架ESMM首次将CTR和CVR两个task进行关联学习，CTR和CVR满足pCTCVR = pCTR * pCVR。 pCVR一般是表示在点击后产生转化的概率，之前的模型都使用clicked samples进行训练，又在预测时却在all impression samples来做预测，产生sample selection bias问题。同时CVR的正样本数据要远小于CTR数据，所以两个任务的共享可优化特征表征。宏观上，CVR能使用中间步骤CTR标签，充分利用了数据特性。[[Read more...](https://zhuanlan.zhihu.com/p/37562283)]
 
 + [**DeepMCP**][**Alibaba**] [Representation Learning-Assisted Click-Through Rate Prediction](https://arxiv.org/abs/1906.04365), by Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, Yanlong Du. *IJCAI *.
   > 本文在CTR预测模型(P)之外，增加了两个子网络：Matching Net (M)和Correlation Net (C)。其中Matching Net建模user+query与ad的匹配关系（与DSSM类似），并且相似度由dot+sigmoid函数计算，训练数据与P模块相同。Correlation模块建模同一用户的点击ad序列相关性，即用skip-gram loss来建模。实验表明，P+M比P+C的提升更显著。
 
 + [**DSM**][**Yahoo & Criteo**] [Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search](https://arxiv.org/abs/1803.10739), by Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic. *Arxiv 2019*.
 
-## Graph-enhanced Modeling
+### Cross-Domain Recommendation
+
++ [Arxiv'2021] One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction
+
++ [Arxiv'2020] DADNN: Multi-Scene CTR Prediction via Domain-Aware Deep Neural Network
+
++ [**MiNet**][**Alibaba**] [MiNet: Mixed Interest Network for Cross-Domain Click-Through Rate Prediction](https://arxiv.org/abs/2008.02974), by Wentao Ouyang, Xiuwu Zhang, Lei Zhao, Jinmei Luo, Yu Zhang, Heng Zou, Zhaojie Liu, Yanlong Du. *CIKM 2020*.
+  > 本文介绍阿里新闻广告CTR广告预估任务中利用用户在新闻内容的行为进行cross-domain学习，即主任务为广告CTR预估，辅助任务为新闻数据上的行为建模(双塔模型)，最后将学到的长期用户兴趣向量和短期新闻点击历史作为特征输入到主任务。效果在前一版模型DSTN上提升CTR 4%左右。
+
+
+### Graph-enhanced Modeling
 + [**ATBRG**][**Alibaba**] [ATBRG: Adaptive Target-Behavior Relational Graph Network for Effective Recommendation](https://arxiv.org/abs/2005.12002), by Yufei Feng, Binbin Hu, Fuyu Lv, Qingwen Liu, Zhiqiang Zhang, Wenwu Ou. *SIGIR 2020*.
   > 本文可以看作在DIN基础上的改进。DIN只考虑用户历史交互的item sequence的聚合，本文提出以KG的方式构建历史item sequence和targe item之间的关系图(target-behavior relational graph), 然后利用GNN聚合每个item周围节点信息，并将多层GNN的输出concate一起。之后，采用DIN的方式聚合item sequence及MLP输出。
 
