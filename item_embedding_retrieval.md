@@ -8,8 +8,8 @@
 
 ### Two-Tower Networks
 
-+ [**EBR**][**Facebook**] [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632), by Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, Linjun Yang. KDD 2020
-> 本文介绍了Facebook的语义检索模型的工程实践经验，包括：1) 随机负采样比曝光未点击样本好 2) 采用triplet loss 3) ANN引擎加入了条件binary matching的过滤 4) retrieval阶段变了，ranking阶段也要跟着优化，考虑加入embedding做特征(query-doc的cosine效果好)和利用人工标注数据finetune embeddings 5) Online hard mining有效(选取相似度最大的negative)；100:1的easy:hard mixing效果最好 6) 双阶段retrieval效果也有提升
++ [**EBR**][**Facebook**] [Embedding-based Retrieval in Facebook Search](https://arxiv.org/abs/2006.11632), by Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, Linjun Yang. *KDD 2020*.
+  > 本文介绍了Facebook的语义检索模型的工程实践经验，包括：1) 随机负采样比曝光未点击样本好 2) 采用triplet loss 3) ANN引擎加入了条件binary matching的过滤 4) retrieval阶段变了，ranking阶段也要跟着优化，考虑加入embedding做特征(query-doc的cosine效果好)和利用人工标注数据finetune embeddings 5) Online hard mining有效(选取相似度最大的negative)；100:1的easy:hard mixing效果最好 6) 双阶段retrieval效果也有提升
 
 1. [**WSDM'19** Talk] [Deep Semantic Matching for Amazon Product Search](https://wsdm2019-dapa.github.io/slides/05-YiweiSong.pdf), by Yiwei Song. [**Amazon**]
     > 该talk讲述了如何利用semantic matching做语义召回，即根据query vector匹配最相邻的product vector，这样原有文本索引队列上加入语义召回队列，进而提升产品搜索。值得参考的点：1. 将doc划分点击、曝光、随机三种，利用分段式的loss函数来确保点击的query-doc pair相似度> 0.9, 随机的query-doc < 0.2, 曝光未点击的 < 0.55。这种pointwise学embedding的方式第一次见，值得借鉴，也需要与word2vec中的方式做比较。2. 分词上采用unigram, 2gram, 3gram, tri-letters多级融合的方式，并在大数据训练集上有较明显效果。3. 另外如何做快速的ANN向量查询也是一个工程化问题
