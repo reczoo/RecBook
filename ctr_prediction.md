@@ -118,5 +118,8 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + [**GIN**][**Alibaba**] [Graph Intention Network for Click-through Rate Prediction in Sponsored Search](https://dl.acm.org/citation.cfm?id=3331283), by Feng Li, Zhenrui Chen, Pengjie Wang, Yi Ren, Di Zhang and Xiaoyu Zhu. *SIGIR 2019*.
 
+### Multimodal Learning
++ [**CSCNN**][**JD**] [Category-Specific CNN for Visual-aware CTR Prediction at JD.com](https://arxiv.org/pdf/2006.10337.pdf), by Hu Liu, Jing Lu, Hao Yang, Xiwei Zhao, Sulong Xu, Hao Peng, Zehua Zhang, Wenjie Niu, Xiaokun Zhu, Yongjun Bao, Weipeng Yan. *KDD 2020*.
+
 
 
