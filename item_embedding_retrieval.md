@@ -4,10 +4,10 @@
 + [Path-based Networks](#Path-based-Networks)
 + [Sequential Recommendation](#Sequential-Recommendation)
 + [Graph-based Recommendation](#Graph-based-Recommendation)
-+ [End-to-End Retrieval](End-to-End-Retrieval)
-+ [Lookalike Model](Lookalike-Model)
-+ [Cross-Domain Recommendation](Cross-Domain-Recommendation)
-+ [Interactive Recommendation](Interactive-Recommendation)
++ [End-to-End Retrieval](#End-to-End-Retrieval)
++ [Lookalike Model](#Lookalike-Model)
++ [Cross-Domain Recommendation](#Cross-Domain-Recommendation)
++ [Interactive Recommendation](#Interactive-Recommendation)
 
 ### Two-Tower Networks
 
