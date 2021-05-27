@@ -76,7 +76,8 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 + [**DSTN**][**Alibaba**] [Deep Spatio-Temporal Neural Networks for Click-Through Rate Prediction](https://arxiv.org/abs/1906.03776), by Wentao Ouyang, Xiuwu Zhang, Li Li, Heng Zou, Xin Xing, Zhaojie Liu, Yanlong Du. *KDD 2019*.
   > 本文在DIN的基础上，除了使用clicked item sequence之外，还引入了unclicked ad sequence和contexual ad sequence, 其中contextual ad定义为在同一个session中target ad之前展示的ad, 在实现时取的时预测结果Top1的ad。本文提出了三种聚合方法，即sum-pooling, self-attention, 和DIN-like atttion (效果在同一level、略微递增), 然后进行Concate + MLP。预测时分两个步骤，先预测一遍取Top1的contexual ad，再输入模型预测第二遍取Top2之后的ad。
 
-+ [**BST**][**Alibaba**] [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874), by Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, Wenwu Ou. *Arxiv 2019*.
++ [**BST**][**Alibaba**] [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://arxiv.org/abs/1905.06874), by Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, Wenwu Ou. *DLP-KDD 2019*.
+  > 本文提出利用transformer取代DIN中的attention，即将history item list与target item拼接成一个序列，并加入position feature (推荐时间与click时间之差)，最后将transformer的输出拼接过MLP。相比DIN提升3个千分点。
 
 + :star: [**DSIN**][**Alibaba**] [Deep Session Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1905.06482), by Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, Keping Yang. *IJCAI 2019*.
   > 本文建模user click sequence (200 per sample)，将sequence按30min划分session，每个session内部的item-subset用单层transformer建模，然后averaging pooling构建跨session sequence，用Bi-LSTM建模session interest交互，最后利用target item进行类DIN的attention aggregation，和其他特征拼接后过MLP做CTR预估。主要创新点是将sequence划分session，然后构建了双层sequence建模。
