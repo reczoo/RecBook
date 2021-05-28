@@ -2,6 +2,7 @@
 
 + [Two-Tower Networks](#Two-Tower-Networks)
 + [Path-based Networks](#Path-based-Networks)
++ [Multi-Interest Recommendation](#Multi-Interest-Recommendation)
 + [Sequential Recommendation](#Sequential-Recommendation)
 + [Graph-based Recommendation](#Graph-based-Recommendation)
 + [End-to-End Retrieval](#End-to-End-Retrieval)
@@ -17,6 +18,15 @@
 ### Path-based Networks
 + [**PDN**][**Alibaba**] *SIGIR 2021*.
   > 本文利用U2I和I2I的三部图来进行分数计算，user和target的分数分为U2I(用户与交互过的item之间)和I2I(交互过的item与target item)的乘积之和。分别由TriggerNet和SimNet两个网络进行学习。
+
+### Multi-Interest Recommendation
++ [**PinnerSage**][**Pinterest**] PinnerSage: Multi-Modal User Embedding Framework for Recommendations at Pinterest, *KDD 2020*.
+  > 本文介绍了Pinterest的多兴趣召回方案，先采用PinSage学习item embedding，作为输入采用Ward聚类方法对历史用户序列(90天)进行聚类，Ward类似hierarchical clustering，聚类数是不定的。然后获取聚类的的中心作为兴趣表征，同时根据类别的大小及行为时间定义了类别的importance，召回时根据importance选取多个兴趣进行召回。同时，从系统上考虑了batch inference和online update来获取实时用户行为更新聚类中心。与单兴趣(single embedding)召回相比，线上效果显著。
+
++ [**ComiRec**][**Alibaba**] [Controllable Multi-Interest Framework for Recommendation](https://arxiv.org/abs/2005.09347), by Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, Jie Tang. *KDD 2020*.
+
++ [**MIND**][**Alibaba**] [Multi-Interest Network with Dynamic Routing for Recommendation at Tmall](), by Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Pipei Huang, Huan Zhao, Guoliang Kang, Qiwei Chen, Wei Li, Dik Lun Lee. *CIKM 2019*
+> dfd
 
 
 ### Sequential Recommendation
