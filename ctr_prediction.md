@@ -12,6 +12,9 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 ### Feature Interactions
 + :star: [**DCN_V2**][**Google**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. *Arixv 2020*.
 
++ [**DeepIM**][**Alibaba & RealAI**] [Deep Interaction Machine: A Simple but Effective Model for High-order Feature Interactions](https://dl.acm.org/doi/abs/10.1145/3340531.3412077), by Feng Yu, Zhaocheng Liu, Qiang Liu, Haoli Zhang, Shu Wu, Liang Wang. *CIKM 2020*. 
+  > 本文利用Newton法将高阶feature interaction项进行展开得到了高阶交互后的解析结果。相当于把FM的展开公式扩展到高阶(5阶)，得到类似NFM中bi-interaction layer的结果(维度为embedding dim)，最后将各阶交互concat起来加一层FC到输出。
+
 + [**InterHAt**][**NEC Labs**] [Interpretable Click-Through Rate Prediction through Hierarchical Attention](https://dl.acm.org/doi/10.1145/3336191.3371785), by Zeyu Li, Wei Cheng, Yang Che, Haifeng Che, Wei Wang. *WSDM 2020*.
   > 本文借鉴了hierarchical attention network的思想，在field间和不同order间进行两层attentional aggregation，进行CTR预测。首先本文采用multi-head transformer计算1st-order feature X1，然后利用attentional aggregation聚合得到向量u1，然后利用u1与X1的hadmard product产生更高阶的特征，依次循环得到k阶特征。最后将所有u1, u2...uk进行attentional aggregation得到最终的向量，过MLP进行分类。
 
