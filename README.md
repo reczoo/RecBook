@@ -2,13 +2,14 @@
 
 
 ### By Topic
-+ [CTR/CVR Prediction](./ctr_prediction.md)
++ [CTR Prediction](./ctr_prediction.md)
     - [Feature Interactions](./ctr_prediction.md#Feature-Interactions) 
     - [Behaviour Sequence Modeling](./ctr_prediction.md#Behaviour-Sequence-Modeling)
     - [Multi-Task Learning](./ctr_prediction.md#Multi-Task-Learning)
     - [Cross-Domain Recommendation](./ctr_prediction.md#Cross-Domain-Recommendation)
     - [AutoML](./ctr_prediction.md#AutoML)
-+ [Item Embedding Retrieval](./item_embedding_retrieval.md)
++ [Candidate Retrieval](./candidate_retrieval.md)
++ [Reranking](./reranking.md)
 + [News Recommendation](./news_recommendation.md)
 + [Video Recommendation](./video_recommendation.md)
 + [Music Recommendation](./music_recommendation.md)

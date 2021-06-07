@@ -1,4 +1,4 @@
-# Papers
+## CTR Prediction
 
 A list of industrial papers on CTR/CVR prediction for online advertising, recommendation, and sponsored search.
 
@@ -121,6 +121,7 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
   > 本文可以看作在DIN基础上的改进。DIN只考虑用户历史交互的item sequence的聚合，本文提出以KG的方式构建历史item sequence和targe item之间的关系图(target-behavior relational graph), 然后利用GNN聚合每个item周围节点信息，并将多层GNN的输出concate一起。之后，采用DIN的方式聚合item sequence及MLP输出。
 
 + [**GIN**][**Alibaba**] [Graph Intention Network for Click-through Rate Prediction in Sponsored Search](https://dl.acm.org/citation.cfm?id=3331283), by Feng Li, Zhenrui Chen, Pengjie Wang, Yi Ren, Di Zhang and Xiaoyu Zhu. *SIGIR 2019*.
+
 
 ### Multimodal Learning
 + [**CSCNN**][**JD**] [Category-Specific CNN for Visual-aware CTR Prediction at JD.com](https://arxiv.org/pdf/2006.10337.pdf), by Hu Liu, Jing Lu, Hao Yang, Xiwei Zhao, Sulong Xu, Hao Peng, Zehua Zhang, Wenjie Niu, Xiaokun Zhu, Yongjun Bao, Weipeng Yan. *KDD 2020*.

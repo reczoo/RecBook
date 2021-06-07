@@ -1,4 +1,4 @@
-# TopK Item Embedding Retrieval
+# Candidate Item Retrieval
 
 + [Two-Tower Networks](#Two-Tower-Networks)
 + [Path-based Networks](#Path-based-Networks)
