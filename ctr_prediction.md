@@ -10,6 +10,15 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 
 ### Feature Interactions
+
+
++ [**MaskNet**][**Sina Weibo**] MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask, *Arxiv 2021*.
+
++ [**FmFM**][**Yahoo**] FM2: Field-matrixed Factorization Machines for Recommender Systems, *WWW 2021*.
+  > 每个feature emb乘以W_{FiFj}进行域转换，得到field-aware表征，基本类似FiBiNET中bilinear interaction。该方法优点是每个field可以使用独立的emb dim。
+
++ [**CAN**][**Alibaba**] CAN: Revisiting Feature Co-Action for Click-Through Rate Prediction, *Arxiv 2020*.
+
 + :star: [**DCN_V2**][**Google**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. *Arixv 2020*.
 
 + [**DeepIM**][**Alibaba & RealAI**] [Deep Interaction Machine: A Simple but Effective Model for High-order Feature Interactions](https://dl.acm.org/doi/abs/10.1145/3340531.3412077), by Feng Yu, Zhaocheng Liu, Qiang Liu, Haoli Zhang, Shu Wu, Liang Wang. *CIKM 2020*. 
@@ -27,11 +36,7 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + [**AutoInt**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), by Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang. *CIKM 2019*.
 
-+ [**FGCNN**][**Huawei**] [Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction](https://arxiv.org/abs/1904.04447), by Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang. *WWW 2019*.
-
 + [**FwFM**][**Yahoo & TouchPal & LinkedIn & Ablibaba**] [Field-weighted Factorization Machines for Click-Through Rate Prediction in Display Advertising](https://arxiv.org/pdf/1806.03514.pdf), by Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, Quan Lu. *WWW, 2018*. 
-
-+ [**RFM**][**WalmartLabs**] [Robust Factorization Machines for User Response Prediction](http://wnzhang.net/share/rtb-papers/rfm-www.pdf), by Surabhi Punjabi, Priyanka Bhatt. *WWW, 2018*.
 
 + :star: [**xDeepFM**][**Microsoft**] [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/pdf/1803.05170.pdf), by Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, Guangzhong Sun. *KDD, 2018*.
 
@@ -49,8 +54,6 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + [**PNN**] [Product-based Neural Networks for User Response Prediction](https://arxiv.org/pdf/1611.00144.pdf), by Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, Jun Wang. *ICDM, 2016*.
  
-+ [**DeepCTR**][**Alibaba**] [Deep CTR Prediction in Display Advertising](https://dl.acm.org/citation.cfm?id=2964325), by Junxuan Chen, Baigui Sun, Hao Li, Hongtao Lu, Xian-Sheng Hua. *MM, 2016*.
-   
 + [**GBDT+LR**][**Facebook**] [Practical Lessons from Predicting Clicks on Ads at Facebook](https://dl.acm.org/citation.cfm?id=2648589), by Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, Joaquin Quiñonero Candela. *ADKDD, 2014*. 
 
 + :star: [**FTRL**][**Google**] [Ad Click Prediction: a View from the Trenches](https://www.researchgate.net/publication/262412214_Ad_click_prediction_a_view_from_the_trenches), by H. Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, Sharat Chikkerur, Dan Liu, Martin Wattenberg, Arnar Mar Hrafnkelsson, Tom Boulos, Jeremy Kubica. *KDD, 2013*.
@@ -126,5 +129,11 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 ### Multimodal Learning
 + [**CSCNN**][**JD**] [Category-Specific CNN for Visual-aware CTR Prediction at JD.com](https://arxiv.org/pdf/2006.10337.pdf), by Hu Liu, Jing Lu, Hao Yang, Xiwei Zhao, Sulong Xu, Hao Peng, Zehua Zhang, Wenjie Niu, Xiaokun Zhu, Yongjun Bao, Weipeng Yan. *KDD 2020*.
 
++ [**DeepCTR**][**Alibaba**] [Deep CTR Prediction in Display Advertising](https://dl.acm.org/citation.cfm?id=2964325), by Junxuan Chen, Baigui Sun, Hao Li, Hongtao Lu, Xian-Sheng Hua. *MM, 2016*.
+
+### Others
++ [**AutoDis**][**Huawei**] An Embedding Learning Framework for Numerical Features in CTR Prediction, *KDD 2021*.
+
++ [**Sina Weibo**] Correct Normalization Matters: Understanding the Effect of Normalization On Deep Neural Network Models For Click-Through Rate Prediction
 
 
