@@ -131,9 +131,13 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + [**DeepCTR**][**Alibaba**] [Deep CTR Prediction in Display Advertising](https://dl.acm.org/citation.cfm?id=2964325), by Junxuan Chen, Baigui Sun, Hao Li, Hongtao Lu, Xian-Sheng Hua. *MM, 2016*.
 
-### Others
+### Embedding
 + [**AutoDis**][**Huawei**] An Embedding Learning Framework for Numerical Features in CTR Prediction, *KDD 2021*.
 
++ [**DHE**][**Google**] Learning to Embed Categorical Features without Embedding Tables for Recommendation, *KDD 2021*.
+
+
+### Others
 + [**Sina Weibo**] Correct Normalization Matters: Understanding the Effect of Normalization On Deep Neural Network Models For Click-Through Rate Prediction
 
 
