@@ -1,5 +1,8 @@
 # News Recommendation
-+ [ACL'2020] MIND: A Large-Scale Dataset for News Recommendation
+
+1. [ACL'2021] HieRec: Hierarchical User Interest Modeling for Personalized News Recommendation
+
+1. [ACL'2020] MIND: A Large-Scale Dataset for News Recommendation
   > 简介：本文介绍了MIND数据集和几篇微软的baseline工作。
 
 1. [ACL'2020] Fine-grained Interest Matching for Neural News Recommendation
