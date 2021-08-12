@@ -11,17 +11,18 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 ### Feature Interactions
 
++ **[SIGIR'21][SAM]** Looking at CTR Prediction Again: Is Attention All You Need? **:triangular_flag_on_post:BOSS**
 
-+ [**MaskNet**][**Sina Weibo**] MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask, *Arxiv 2021*.
++ **[KDD-DLP'21][MaskNet]** MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask, by xxx, xxx. **:triangular_flag_on_post:Sina Weibo**
 
 + [**FmFM**][**Yahoo**] FM2: Field-matrixed Factorization Machines for Recommender Systems, *WWW 2021*.
   > 每个feature emb乘以W_{FiFj}进行域转换，得到field-aware表征，基本类似FiBiNET中bilinear interaction。该方法优点是每个field可以使用独立的emb dim。
 
-+ [**CAN**][**Alibaba**] CAN: Revisiting Feature Co-Action for Click-Through Rate Prediction, *Arxiv 2020*.
++ **[Arxiv'20][CAN]** CAN: Revisiting Feature Co-Action for Click-Through Rate Prediction. **:triangular_flag_on_post:Alibaba**
 
-+ :star: [**DCN_V2**][**Google**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. *Arixv 2020*.
++ :+1:**[Arxiv'20][DCN_V2]** [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. **:triangular_flag_on_post:Google**.
 
-+ [**DeepIM**][**Alibaba & RealAI**] [Deep Interaction Machine: A Simple but Effective Model for High-order Feature Interactions](https://dl.acm.org/doi/abs/10.1145/3340531.3412077), by Feng Yu, Zhaocheng Liu, Qiang Liu, Haoli Zhang, Shu Wu, Liang Wang. *CIKM 2020*. 
++ **[CIKM'20][DeepIM]** [Deep Interaction Machine: A Simple but Effective Model for High-order Feature Interactions](https://dl.acm.org/doi/abs/10.1145/3340531.3412077), by Feng Yu, Zhaocheng Liu, Qiang Liu, Haoli Zhang, Shu Wu, Liang Wang. **:triangular_flag_on_post:Alibaba & RealAI**
   > 本文利用Newton法将高阶feature interaction项进行展开得到了高阶交互后的解析结果。相当于把FM的展开公式扩展到高阶(5阶)，得到类似NFM中bi-interaction layer的结果(维度为embedding dim)，最后将各阶交互concat起来加一层FC到输出。
 
 + [**InterHAt**][**NEC Labs**] [Interpretable Click-Through Rate Prediction through Hierarchical Attention](https://dl.acm.org/doi/10.1145/3336191.3371785), by Zeyu Li, Wei Cheng, Yang Che, Haifeng Che, Wei Wang. *WSDM 2020*.
