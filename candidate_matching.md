@@ -1,4 +1,4 @@
-# Candidate Item Retrieval
+# Candidate Item Matching
 
 + [Two-Tower Networks](#Two-Tower-Networks)
 + [Path-based Networks](#Path-based-Networks)
