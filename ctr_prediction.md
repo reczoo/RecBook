@@ -13,14 +13,14 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + **[SIGIR'21][SAM]** Looking at CTR Prediction Again: Is Attention All You Need? **:triangular_flag_on_post:BOSS**
 
-+ **[KDD-DLP'21][MaskNet]** MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask, by xxx, xxx. **:triangular_flag_on_post:Sina Weibo**
++ **[DLP-KDD'21][MaskNet]** MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask, by xxx, xxx. **:triangular_flag_on_post:Sina Weibo**
 
-+ [**FmFM**][**Yahoo**] FM2: Field-matrixed Factorization Machines for Recommender Systems, *WWW 2021*.
++ [**FmFM**][**Yahoo**] FM2: Field-matrixed Factorization Machines for Recommender Systems. **:triangular_flag_on_post:Google**.
   > 每个feature emb乘以W_{FiFj}进行域转换，得到field-aware表征，基本类似FiBiNET中bilinear interaction。该方法优点是每个field可以使用独立的emb dim。
 
-+ **[Arxiv'20][CAN]** CAN: Revisiting Feature Co-Action for Click-Through Rate Prediction. **:triangular_flag_on_post:Alibaba**
++ **[WSDM'21][CAN]** CAN: Revisiting Feature Co-Action for Click-Through Rate Prediction. **:triangular_flag_on_post:Alibaba**
 
-+ :+1:**[Arxiv'20][DCN_V2]** [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. **:triangular_flag_on_post:Google**.
++ :+1:**[WWW'21][DCN_V2]** [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), by Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi. **:triangular_flag_on_post:Google**.
 
 + **[CIKM'20][DeepIM]** [Deep Interaction Machine: A Simple but Effective Model for High-order Feature Interactions](https://dl.acm.org/doi/abs/10.1145/3340531.3412077), by Feng Yu, Zhaocheng Liu, Qiang Liu, Haoli Zhang, Shu Wu, Liang Wang. **:triangular_flag_on_post:Alibaba & RealAI**
   > 本文利用Newton法将高阶feature interaction项进行展开得到了高阶交互后的解析结果。相当于把FM的展开公式扩展到高阶(5阶)，得到类似NFM中bi-interaction layer的结果(维度为embedding dim)，最后将各阶交互concat起来加一层FC到输出。
@@ -30,8 +30,6 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 
 + [**TFNet**][**Tencent**] [TFNet: Multi-Semantic Feature Interaction for CTR Prediction](https://arxiv.org/abs/2006.15939), by Shu Wu, Feng Yu, Xueli Yu, Qiang Liu, Liang Wang, Tieniu Tan, Jie Shao, Fan Huang. *SIGIR 2020*.
   > 本文是腾讯在App推荐场景的工作。针对inner produc交互层加入了一个operation tensor，即vi*vj变为vi*T*vj，其中T的size为dxmxd，代表m个semantic space。此外，T还引入gate机制将vi_vj pair的T动态调整，即vi*Tij*vj.
-
-+ [**FAT-DeepFFM**][**Sina Weibo**] [FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine](https://arxiv.org/abs/1905.06336), by Junlin Zhang, Tongwen Huang, Zhiqi Zhang. *ICDM 2019*.
 
 + [**FiBiNET**][**Sina Weibo**] [FiBiNET: Combining Feature Importance and Bilinear feature Interaction for Click-Through Rate Prediction](https://arxiv.org/abs/1905.09433), by Tongwen Huang, Zhiqi Zhang, Junlin Zhang. *RecSys 2019*. 
 
@@ -52,8 +50,6 @@ A list of industrial papers on CTR/CVR prediction for online advertising, recomm
 + :star: [**FFM**][**Criteo**] [Field-aware Factorization Machines for CTR Prediction](https://dl.acm.org/citation.cfm?id=2959134), by Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, Chih-Jen Lin. *RecSys, 2016*.
 
 + :star: [**WideDeep**][**Google**] [Wide & Deep Learning for Recommender Systems](https://arxiv.org/pdf/1606.07792.pdf), by Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, Hemal Shah. *DLRS, 2016*.
-
-+ [**PNN**] [Product-based Neural Networks for User Response Prediction](https://arxiv.org/pdf/1611.00144.pdf), by Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, Jun Wang. *ICDM, 2016*.
  
 + [**GBDT+LR**][**Facebook**] [Practical Lessons from Predicting Clicks on Ads at Facebook](https://dl.acm.org/citation.cfm?id=2648589), by Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, Joaquin Quiñonero Candela. *ADKDD, 2014*. 
 
